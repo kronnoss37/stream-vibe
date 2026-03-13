@@ -16,4 +16,13 @@ export default defineConfig({
       interval: 100,
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @use '@/styles/helpers' as *;
+        `,
+      },
+    },
+  },
 })
