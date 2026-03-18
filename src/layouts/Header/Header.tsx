@@ -7,6 +7,11 @@ import BurgerButton from '@/components/BurgerButton'
 import './Header.scss'
 import { useEffect, useState } from 'react'
 
+type MenuItem = {
+  label: string
+  href: string
+}
+
 const Header = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
@@ -28,7 +33,7 @@ const Header = () => {
     setIsDialogOpen((prev) => !prev)
   }
 
-  const menuItems = [
+  const menuItems: MenuItem[] = [
     {
       label: 'Home',
       href: '/',
