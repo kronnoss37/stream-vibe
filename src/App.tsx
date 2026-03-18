@@ -2,14 +2,17 @@ import { Routes, Route } from 'react-router'
 import MainLayout from '@/layouts/MainLayout'
 import HomePage from '@/pages/HomePage'
 import MoviesPage from '@/pages/MoviesPage'
+import SupportPage from '@/pages/SupportPage'
+import SubscriptionsPage from '@/pages/SubscriptionsPage'
 
 function App() {
   return (
     <Routes>
-      {/* url paths ??? */}
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/support" element={<SupportPage />} />
+        <Route path="/subscriptions" element={<SubscriptionsPage />} />
       </Route>
     </Routes>
   )
