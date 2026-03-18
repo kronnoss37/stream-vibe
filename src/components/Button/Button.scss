@@ -1,0 +1,51 @@
+.button {
+  @include flex-center(true);
+
+  column-gap: 4px;
+  padding: fluid-to-laptop(18, 14) fluid-to-laptop(24, 20);
+  background-color: var(--color-red-45);
+  color: var(--color-white);
+  font-weight: 600;
+
+  border: none;
+  border-radius: var(--border-radius-s);
+  cursor: pointer;
+  user-select: none;
+
+  @include transition((background-color, color));
+
+  @include hover {
+    color: var(--color-white);
+    background-color: var(--color-red-60);
+  }
+
+  @include laptop {
+    border-radius: var(--border-radius-xs);
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+
+  &:disabled {
+    background-color: var(--color-black-06);
+    color: var(--color-gray-60);
+    pointer-events: none;
+  }
+
+  &:has(.button__icon:only-child) {
+    padding: 0;
+  }
+
+  &--transparent {
+    background-color: transparent;
+
+    &:has(.button__icon:only-child) {
+      @include size(44px);
+
+      .button__icon {
+        --iconSize: #{fluid-to-laptop(34, 24)};
+      }
+    }
+  }
+}
