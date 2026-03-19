@@ -5,9 +5,9 @@ import './Button.scss'
 
 interface ButtonBaseProps {
   className?: string
+  mode?: 'transparent' | 'black-10'
   label: string
   isLabelHidden?: boolean
-  mode?: 'transparent'
   iconName?: IconName
   iconPosition?: 'before' | 'after'
 }
@@ -20,9 +20,9 @@ type SpecificProps<T extends ElementType> = {
 const Button = <T extends ElementType = 'button'>({
   as,
   className,
+  mode,
   label,
   isLabelHidden,
-  mode,
   iconName,
   iconPosition = 'before',
   ...props
