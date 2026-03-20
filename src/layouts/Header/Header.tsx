@@ -7,12 +7,16 @@ import BurgerButton from '@/components/BurgerButton'
 import './Header.scss'
 import { useEffect, useState } from 'react'
 
+interface HeaderProps {
+  isHomePage?: boolean
+}
+
 type MenuItem = {
   label: string
   href: string
 }
 
-const Header = () => {
+const Header = ({ isHomePage }: HeaderProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   useEffect(() => {
@@ -53,7 +57,11 @@ const Header = () => {
   ]
 
   return (
-    <header className="header">
+    <header
+      className={classNames('header', {
+        'is-fixed': isHomePage,
+      })}
+    >
       <div className="header__inner container">
         <Logo className="header__logo" loading="eager" />
         <dialog className="header__overlay-menu-dialog" open={isDialogOpen}>
