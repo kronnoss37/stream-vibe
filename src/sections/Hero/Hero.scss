@@ -1,0 +1,68 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
+  padding-bottom: var(--section-padding-y);
+  text-align: center;
+
+  @include mobile {
+    min-height: 639px;
+  }
+
+  &__pano {
+    --heroPanoGradientColorStart: var(--color-black-08);
+    --heroPanoGradientColorEnd: rgb(20 20 20 / 0);
+
+    --heroPanoGradientHeight: 67.5%;
+
+    --heroPanoGradientTop: linear-gradient(
+        to bottom,
+        var(--heroPanoGradientColorStart) 0%,
+        var(--heroPanoGradientColorEnd) 100%
+      )
+      50% 0/100% var(--heroPanoGradientHeight);
+
+    --heroPanoGradientBottom: linear-gradient(
+        to top,
+        var(--heroPanoGradientColorStart) 0%,
+        var(--heroPanoGradientColorEnd) 100%
+      )
+      50% 101%/100% var(--heroPanoGradientHeight);
+
+    @include flex-center;
+    flex-grow: 1;
+    padding-top: fluid(195, 150);
+    padding-bottom: fluid(131, 50);
+
+    background:
+      var(--heroPanoGradientTop),
+      var(--heroPanoGradientBottom),
+      url('../../assets/images/hero/bg.png') 50% / cover;
+    background-repeat: no-repeat;
+  }
+
+  &__play-button {
+    @include size(fluid(470, 200));
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: fluid(50, 20);
+  }
+
+  &__title {
+    margin-top: -1em;
+    margin-bottom: fluid-to-laptop(14, 10);
+  }
+
+  &__description {
+    margin-bottom: fluid(50, 30);
+  }
+}

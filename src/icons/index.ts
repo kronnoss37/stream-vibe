@@ -1,8 +1,9 @@
 import SearchIcon from './SearchIcon'
 import NotificationIcon from './NotificationIcon'
-import FacebookIcon from '@/icons/FacebookIcon'
-import TwitterIcon from '@/icons/TwitterIcon'
-import LinkedInIcon from '@/icons/LinkedInIcon'
+import FacebookIcon from './FacebookIcon'
+import TwitterIcon from './TwitterIcon'
+import LinkedInIcon from './LinkedInIcon'
+import PlayIcon from './PlayIcon'
 
 export const icons = {
   search: SearchIcon,
@@ -10,4 +11,5 @@ export const icons = {
   facebook: FacebookIcon,
   twitter: TwitterIcon,
   'linked-in': LinkedInIcon,
+  play: PlayIcon,
 }
