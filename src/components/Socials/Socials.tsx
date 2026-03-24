@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import Button from '@/components/Button'
+import { AnchorButton } from '@/components/Button'
 import type { SocialLinkItem } from '@/types/links'
 
 import './Socials.scss'
@@ -15,8 +15,7 @@ const Socials = ({ className, links }: SocialsProps) => {
       <ul className="soc1als__list">
         {links.map(({ label, href, iconName }, index) => (
           <li key={index} className="soc1als__item">
-            <Button
-              as="a"
+            <AnchorButton
               className="soc1als__link"
               mode="black-10"
               href={href}

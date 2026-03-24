@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router'
 import classNames from 'classnames'
 import Logo from '@/components/Logo'
-import Button from '@/components/Button'
+import { Button } from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
 
 import './Header.scss'

@@ -1,4 +1,4 @@
-import Button from '@/components/Button'
+import { Button } from '@/components/Button'
 
 import PlayImage from '/play.svg'
 import './Hero.scss'

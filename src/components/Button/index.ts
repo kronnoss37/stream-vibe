@@ -1,3 +1,5 @@
 import Button from './Button'
+import AnchorButton from './AnchorButton'
+import LinkButton from './LinkButton'
 
-export default Button
+export { Button, AnchorButton, LinkButton }

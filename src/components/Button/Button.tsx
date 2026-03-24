@@ -1,54 +1,47 @@
-import type { ComponentPropsWithoutRef, ElementType } from 'react'
 import classNames from 'classnames'
-import Icon, { type IconName } from '@/components/Icon'
+import { type ButtonBase } from '@/types/button'
+import ButtonContent from './ButtonContent'
 import './Button.scss'
+import { forwardRef, type ButtonHTMLAttributes } from 'react'
 
-interface ButtonBaseProps {
-  className?: string
-  mode?: 'transparent' | 'black-10'
-  label: string
-  isLabelHidden?: boolean
-  iconName?: IconName
-  iconPosition?: 'before' | 'after'
-}
+type ButtonProps = ButtonBase &
+  Omit<ButtonHTMLAttributes<HTMLButtonElement>, keyof ButtonBase>
 
-type SpecificProps<T extends ElementType> = {
-  as?: T
-} & ButtonBaseProps &
-  Omit<ComponentPropsWithoutRef<T>, keyof ButtonBaseProps | 'as'>
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      className,
+      type = 'button',
+      mode,
+      label,
+      isLabelHidden,
+      ...props
+    }: ButtonProps,
+    ref,
+  ) => {
+    const title = isLabelHidden ? label : undefined
 
-const Button = <T extends ElementType = 'button'>({
-  as,
-  className,
-  mode,
-  label,
-  isLabelHidden,
-  iconName,
-  iconPosition = 'before',
-  ...props
-}: SpecificProps<T>) => {
-  const Component = as ?? 'button'
+    return (
+      <button
+        ref={ref}
+        type={type}
+        className={classNames(className, 'button', {
+          [`button--${mode}`]: mode,
+        })}
+        title={title}
+        aria-label={title}
+        {...props}
+      >
+        <ButtonContent
+          label={label}
+          isLabelHidden={isLabelHidden}
+          iconName={props.iconName}
+          iconPosition={props.iconPosition}
+        />
+      </button>
+    )
+  },
+)
 
-  const title = isLabelHidden ? label : undefined
-
-  const IconComponent = iconName && (
-    <Icon className="button__icon" name={iconName} />
-  )
-
-  return (
-    <Component
-      className={classNames(className, 'button', {
-        [`button--${mode}`]: mode,
-      })}
-      title={title}
-      aria-label={title}
-      {...props}
-    >
-      {iconPosition === 'before' && IconComponent}
-      {!isLabelHidden && <span className="button__label">{label}</span>}
-      {iconPosition === 'after' && IconComponent}
-    </Component>
-  )
-}
-
+Button.displayName = 'Button'
 export default Button
