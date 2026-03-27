@@ -1,0 +1,27 @@
+.section {
+  padding-block: var(--section-padding-y);
+
+  &__inner {
+    display: grid;
+    row-gap: fluid(80, 40);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+
+    &:has(.section__description) {
+      align-items: flex-end;
+    }
+  }
+
+  &__info {
+    display: grid;
+    row-gap: fluid(14, 8);
+  }
+
+  &__title {
+  }
+}
