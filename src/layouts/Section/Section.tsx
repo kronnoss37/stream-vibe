@@ -9,7 +9,7 @@ interface SectionProps {
   titleId: string
   description?: string
   actions?: ReactNode
-  isActionHiddenOnMobile: boolean
+  isActionHiddenOnMobile?: boolean
   children: ReactNode
 }
 
