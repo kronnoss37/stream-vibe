@@ -4,7 +4,7 @@ import useSliderScrollbar from '@/hooks/useSliderScrollbar'
 import Section from '@/layouts/Section'
 import Slider from '@/components/Slider'
 import SliderNavigation from '@/components/Slider/components/SliderNavigation'
-import CategoryCard from '@/sections/CategoryCard'
+import CategoryCard from '@/components/CategoryCard'
 import { categoryItems } from '@/data/categoryItems'
 
 import './Categories.scss'

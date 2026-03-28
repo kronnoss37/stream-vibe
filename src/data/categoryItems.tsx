@@ -1,4 +1,4 @@
-import { type CategoryCardType } from '@/sections/CategoryCard'
+import { type CategoryCardType } from '@/components/CategoryCard'
 
 import action_1 from '@/assets/images/categories/action/1.jpg'
 import action_2 from '@/assets/images/categories/action/2.jpg'
