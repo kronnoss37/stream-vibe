@@ -12,8 +12,16 @@
     align-items: center;
     column-gap: 20px;
 
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+    }
+
     &:has(.section__description) {
-      align-items: flex-end;
+      @include mobile-above {
+        align-items: flex-end;
+      }
     }
   }
 
