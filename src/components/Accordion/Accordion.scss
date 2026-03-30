@@ -1,0 +1,81 @@
+.accordion {
+  width: 100%;
+
+  &__details {
+    &[open] {
+      .accordion__title {
+        &::after {
+          transform: translateY(-50%) rotate(0deg);
+        }
+      }
+
+      & + .accordion__content {
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+
+  &__summary {
+    color: var(--color-white);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+
+    @include hover {
+      .accordion__title {
+        color: var(--color-red-60);
+      }
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: var(--accordionGroupCounterHeight);
+    padding-right: 50px;
+    color: inherit;
+
+    @include transition((color));
+
+    &::before,
+    &::after {
+      @include abs-y;
+
+      content: '';
+      right: 0;
+      width: fluid-to-laptop(20, 16);
+      height: 2.5px;
+      background-color: var(--color-white);
+      border-radius: 10px;
+
+      @include transition((transform));
+
+      @include laptop {
+        height: 2px;
+      }
+    }
+
+    &::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 0fr; // для плавного перехода открытия аккордиона, контент получает 0 высоты, а за счет "overflow: hidden;" ниже, контент обрезается. При открытии задаем 1fr
+    transition-duration: var(--transition-duration-longer);
+
+    &-inner {
+      overflow: hidden;
+    }
+
+    &-body {
+      margin-top: 20px;
+    }
+  }
+}

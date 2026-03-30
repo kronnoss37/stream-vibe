@@ -1,0 +1,98 @@
+.accordion-group {
+  &--2-columns {
+    // - спец. свойство для расположения эл-тов в 2 колонки, без grid или flex, т.к. эл-ты должны идти друг под другом, а не слева на право
+    column-gap: fluid-to-laptop(80, 40);
+
+    @include tablet-above {
+      column-count: 2;
+    }
+  }
+
+  &--has-counter {
+    --accordionGroupCounterHeight: #{fluid(67, 46)};
+
+    counter-reset: custom-counter;
+    list-style: none;
+
+    .accordion-group__item {
+      display: flex;
+      column-gap: fluid-to-laptop(20, 16);
+      counter-increment: custom-counter;
+
+      &::before {
+        @include flex-center;
+
+        content: counter(
+          custom-counter,
+          decimal-leading-zero
+        ); // decimal-leading-zero - параметр, который нужен для того, чтобы в элементах кастомного счетчика с 1 по 9 элемент были нулевые префиксы
+
+        min-width: fluid(62, 42);
+        height: var(--accordionGroupCounterHeight);
+        font-size: fluid-to-laptop(20, 16);
+        font-weight: 600;
+        background-color: var(--color-black-12);
+        color: var(--color-white);
+        border: var(--border-base);
+        border-radius: var(--border-radius-m);
+
+        @include laptop {
+          border-radius: var(--border-radius-s);
+        }
+
+        @include mobile {
+          border-radius: var(--border-radius-xs);
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: fluid-to-laptop(34, 24);
+    break-inside: avoid-column; // чтобы контент эл-тов не перебрасывался на несколько колонок
+
+    @include tablet-above {
+      &--last-column-item {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    @include tablet {
+      --accordionGroupItemPaddingY: 40px;
+      --accordionGroupItemHalfPaddingY: calc(
+        var(--accordionGroupItemPaddingY) / 2
+      );
+
+      padding: var(--accordionGroupItemPaddingY) 10px;
+
+      &:first-child {
+        padding-top: var(--accordionGroupItemHalfPaddingY);
+      }
+
+      &:last-child {
+        padding-bottom: var(--accordionGroupItemHalfPaddingY);
+      }
+    }
+
+    &:not(:last-child) {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(
+          90deg,
+          rgba(229, 0, 0, 0) 0%,
+          var(--color-red-45) 16.67%,
+          rgba(229, 0, 0, 0) 100%
+        );
+      }
+    }
+  }
+}
