@@ -3,24 +3,17 @@ import classNames from 'classnames'
 import type { Swiper as SwiperType } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules'
-import type { SwiperOptions } from 'swiper/types'
 import SliderNavigation from './components/SliderNavigation'
 import useSliderModules from '@/hooks/useSliderModules'
 import type {
   NavigationRefs,
   PaginationRefs,
   ScrollbarRefs,
+  SliderParamsType,
 } from '@/types/slider'
 
 import 'swiper/css'
 import './Slider.scss'
-
-type SliderParamsType = {
-  slidesPerView: number
-  slidesPerGroup: number
-  spaceBetween: number
-  breakpoints: SwiperOptions['breakpoints']
-}
 
 const defaultSliderParams = {
   slidesPerView: 5,
@@ -65,6 +58,8 @@ interface SliderProps {
   sliderParams?: SliderParamsType
   withInternalNavigation?: boolean
   isBeyondTheViewportOnMobileS?: boolean
+  navigationPosition?: 'abs-bottom'
+  isNavigationHiddenMobile?: boolean
 }
 
 const Slider = ({
@@ -75,6 +70,8 @@ const Slider = ({
   sliderParams = defaultSliderParams,
   withInternalNavigation = false,
   isBeyondTheViewportOnMobileS = false,
+  navigationPosition,
+  isNavigationHiddenMobile = true,
 }: SliderProps) => {
   const swiperRef = useRef<SwiperType>(null)
 
@@ -108,6 +105,8 @@ const Slider = ({
           className="slider__navigation"
           navigation={navigation}
           pagination={pagination}
+          position={navigationPosition}
+          isHiddenMobile={isNavigationHiddenMobile}
         />
       )}
 

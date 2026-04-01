@@ -9,6 +9,8 @@ interface SliderNavigationProps {
   mode?: 'tile'
   navigation?: NavigationRefs
   pagination?: PaginationRefs
+  position?: 'abs-bottom'
+  isHiddenMobile?: boolean
 }
 
 const SliderNavigation = ({
@@ -16,6 +18,8 @@ const SliderNavigation = ({
   mode,
   navigation,
   pagination,
+  position,
+  isHiddenMobile,
 }: SliderNavigationProps) => {
   if (!navigation) return null
 
@@ -26,6 +30,8 @@ const SliderNavigation = ({
     <div
       className={classNames(className, 'slider-navigation', {
         [`slider-navigation--${mode}`]: mode,
+        [`slider-navigation--${position}`]: position,
+        'hidden-mobile': isHiddenMobile,
       })}
     >
       <Button

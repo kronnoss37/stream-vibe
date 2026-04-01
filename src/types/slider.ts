@@ -1,5 +1,6 @@
 import type { RefObject } from 'react'
 import type { Swiper } from 'swiper'
+import type { SwiperOptions } from 'swiper/types'
 
 interface NavigationRefs {
   prevBtnRef: RefObject<HTMLButtonElement | null>
@@ -16,4 +17,17 @@ interface PaginationRefs {
 
 type SwiperRef = RefObject<Swiper | null>
 
-export type { NavigationRefs, ScrollbarRefs, PaginationRefs, SwiperRef }
+type SliderParamsType = {
+  slidesPerView: number
+  slidesPerGroup?: number
+  spaceBetween?: number
+  breakpoints?: SwiperOptions['breakpoints']
+}
+
+export type {
+  NavigationRefs,
+  ScrollbarRefs,
+  PaginationRefs,
+  SwiperRef,
+  SliderParamsType,
+}
