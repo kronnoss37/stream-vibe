@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router'
 import MainLayout from '@/layouts/MainLayout'
+import LayoutWithFixedHeader from '@/layouts/LayoutWithFixedHeader'
 import HomePage from '@/pages/HomePage'
 import MoviesPage from '@/pages/MoviesPage'
 import SupportPage from '@/pages/SupportPage'
@@ -8,8 +9,11 @@ import SubscriptionsPage from '@/pages/SubscriptionsPage'
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<HomePage />} />
+      <Route element={<LayoutWithFixedHeader />}>
+        <Route path="/" element={<HomePage />} />
+      </Route>
+
+      <Route element={<MainLayout />}>
         <Route path="/movies" element={<MoviesPage />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/subscriptions" element={<SubscriptionsPage />} />

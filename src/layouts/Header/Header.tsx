@@ -8,7 +8,7 @@ import './Header.scss'
 import { useEffect, useState } from 'react'
 
 interface HeaderProps {
-  isHomePage?: boolean
+  isFixed?: boolean
 }
 
 type MenuItem = {
@@ -16,7 +16,7 @@ type MenuItem = {
   href: string
 }
 
-const Header = ({ isHomePage }: HeaderProps) => {
+const Header = ({ isFixed }: HeaderProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const Header = ({ isHomePage }: HeaderProps) => {
   return (
     <header
       className={classNames('header', {
-        'is-fixed': isHomePage,
+        'is-fixed': isFixed,
       })}
     >
       <div className="header__inner container">
