@@ -6,6 +6,9 @@ import LinkedInIcon from './LinkedInIcon'
 import PlayIcon from './PlayIcon'
 import ArrowRightIcon from '@/icons/ArrowRightIcon'
 import ArrowLeftIcon from '@/icons/ArrowLeftIcon'
+import PlusIcon from '@/icons/PlusIcon'
+import LikeIcon from '@/icons/LikeIcon'
+import VolumeIcon from '@/icons/VolumeIcon'
 
 export const icons = {
   search: SearchIcon,
@@ -16,4 +19,7 @@ export const icons = {
   play: PlayIcon,
   'arrow-right': ArrowRightIcon,
   'arrow-left': ArrowLeftIcon,
+  plus: PlusIcon,
+  like: LikeIcon,
+  volume: VolumeIcon,
 }
