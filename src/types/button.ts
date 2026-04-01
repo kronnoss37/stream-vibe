@@ -9,5 +9,5 @@ export interface ButtonContent {
 
 export interface ButtonBase extends ButtonContent {
   className?: string
-  mode?: 'transparent' | 'black-10'
+  mode?: 'transparent' | 'black-10' | 'black-08'
 }
