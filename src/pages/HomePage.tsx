@@ -3,6 +3,7 @@ import Hero from '@/sections/Hero'
 import Categories from '@/sections/Categories'
 import Devices from '@/sections/Devices'
 import Questions from '@/sections/Questions'
+import Plans from '@/sections/Plans'
 
 const title = 'Home Page'
 
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Categories />
       <Devices />
       <Questions />
+      <Plans />
     </>
   )
 }
