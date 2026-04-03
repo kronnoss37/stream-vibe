@@ -4,7 +4,7 @@
   --tabsNavigationPadding: #{fluid-to-laptop(10, 8)};
 
   position: relative;
-  display: flex;
+  display: var(--tabsNavigationDisplay, flex);
 
   padding: var(--tabsNavigationPadding);
   background-color: var(--color-black-06);
@@ -37,6 +37,10 @@
 
   &__button {
     position: relative;
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: center;
+
     padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
     cursor: pointer;
     user-select: none;

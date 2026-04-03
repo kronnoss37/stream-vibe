@@ -12,6 +12,7 @@ interface TabsProps {
   onChange: (id: string) => void
   items: TabItemWithContent[]
   withInternalNavigation?: boolean
+  isEnableOnMobile?: boolean
 }
 
 const Tabs = ({
@@ -21,17 +22,20 @@ const Tabs = ({
   onChange,
   items,
   withInternalNavigation = false,
+  isEnableOnMobile = false,
 }: TabsProps) => {
-  const activeTab = items.find((item) => item.id === activeId)
+  const itemsToRender = isEnableOnMobile
+    ? items
+    : items.filter((item) => item.id === activeId)
 
-  if (!activeTab) return null
-
-  const { buttonId, contentId } = getTabsElementsIdsFromTitle(
-    `${title} ${activeTab.title}`,
-  )
+  if (itemsToRender.length === 0) return null
 
   return (
-    <div className={classNames(className, 'tabs')}>
+    <div
+      className={classNames(className, 'tabs', {
+        'tabs--enable-on-mobile': isEnableOnMobile,
+      })}
+    >
       {withInternalNavigation && (
         <TabsNavigation
           className="tabs__navigation"
@@ -43,14 +47,27 @@ const Tabs = ({
       )}
 
       <div className="tabs__body">
-        <div
-          className="tabs__content"
-          id={contentId}
-          aria-labelledby={buttonId}
-          tabIndex={0}
-        >
-          {activeTab.children}
-        </div>
+        {itemsToRender.map((item) => {
+          const { buttonId, contentId } = getTabsElementsIdsFromTitle(
+            `${title} ${item.title}`,
+          )
+
+          const isActive = item.id === activeId
+
+          return (
+            <div
+              key={item.id}
+              className={classNames('tabs__content', {
+                'is-active': isActive,
+              })}
+              id={contentId}
+              aria-labelledby={buttonId}
+              tabIndex={0}
+            >
+              {item.children}
+            </div>
+          )
+        })}
       </div>
     </div>
   )
