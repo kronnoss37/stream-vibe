@@ -24,16 +24,19 @@ const defaultSliderParams = {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 20,
+      allowTouchMove: true,
     },
     481: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 20,
+      allowTouchMove: true,
     },
     768: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 20,
+      allowTouchMove: true,
     },
     1024: {
       slidesPerView: 5,
