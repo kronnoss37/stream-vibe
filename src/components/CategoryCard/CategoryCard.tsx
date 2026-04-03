@@ -1,15 +1,17 @@
 import { Link } from 'react-router'
 import Icon from '@/components/Icon'
 import LazyImage from '@/components/LazyImage'
+import Badge from '@/components/Badge'
 
 import './CategoryCard.scss'
 
 export interface CategoryCardProps {
   title: string
   images: string[]
+  badge?: string
 }
 
-const CategoryCard = ({ title, images }: CategoryCardProps) => {
+const CategoryCard = ({ title, images, badge }: CategoryCardProps) => {
   return (
     <Link to="/movies" className="category-card">
       <div className="category-card__images">
@@ -24,7 +26,14 @@ const CategoryCard = ({ title, images }: CategoryCardProps) => {
         ))}
       </div>
       <div className="category-card__body">
-        <h3 className="category-card__title">{title}</h3>
+        <h3 className="category-card__title">
+          {badge && (
+            <Badge className="category-card__badge" mode="accent" isBig>
+              {badge}
+            </Badge>
+          )}
+          <span>{title}</span>
+        </h3>
         <Icon className="category-card__icon" name="arrow-right" />
       </div>
     </Link>
