@@ -9,6 +9,9 @@ import ArrowLeftIcon from '@/icons/ArrowLeftIcon'
 import PlusIcon from '@/icons/PlusIcon'
 import LikeIcon from '@/icons/LikeIcon'
 import VolumeIcon from '@/icons/VolumeIcon'
+import ClockIcon from '@/icons/ClockIcon'
+import EyeIcon from '@/icons/EyeIcon'
+import CatalogIcon from '@/icons/CatalogIcon'
 
 export const icons = {
   search: SearchIcon,
@@ -22,4 +25,7 @@ export const icons = {
   plus: PlusIcon,
   like: LikeIcon,
   volume: VolumeIcon,
+  clock: ClockIcon,
+  eye: EyeIcon,
+  catalog: CatalogIcon,
 }

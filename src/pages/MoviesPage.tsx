@@ -1,5 +1,6 @@
 import useTitle from '@/hooks/useTitle'
 import MoviesBanner from '@/sections/MoviesBanner'
+import Collections from '@/sections/Collections'
 
 const title = 'Movies & Shows Page'
 
@@ -9,6 +10,7 @@ const MoviesPage = () => {
   return (
     <>
       <MoviesBanner />
+      <Collections />
     </>
   )
 }

@@ -1,0 +1,44 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(20, 12);
+
+  padding: 20px;
+  background-color: var(--color-black-10);
+  border: var(--border-base);
+  border-radius: var(--border-radius-l);
+
+  @include transition((border-color));
+  @include hover {
+    border-color: var(--color-white);
+  }
+
+  @include laptop {
+    padding: 16px;
+    border-radius: var(--border-radius-m);
+  }
+
+  @include mobile {
+    padding: 12px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: inherit;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    column-gap: 3px;
+  }
+
+  &__released-badge {
+    width: 100%;
+
+    &-label {
+      color: var(--color-gray-75);
+    }
+  }
+}
