@@ -12,6 +12,10 @@ import VolumeIcon from '@/icons/VolumeIcon'
 import ClockIcon from '@/icons/ClockIcon'
 import EyeIcon from '@/icons/EyeIcon'
 import CatalogIcon from '@/icons/CatalogIcon'
+import CalendarIcon from '@/icons/CalendarIcon'
+import TranslateIcon from '@/icons/TranslateIcon'
+import StarIcon from '@/icons/StarIcon'
+import GenresIcon from '@/icons/GenresIcon'
 
 export const icons = {
   search: SearchIcon,
@@ -28,4 +32,8 @@ export const icons = {
   clock: ClockIcon,
   eye: EyeIcon,
   catalog: CatalogIcon,
+  calendar: CalendarIcon,
+  translate: TranslateIcon,
+  star: StarIcon,
+  genres: GenresIcon,
 }

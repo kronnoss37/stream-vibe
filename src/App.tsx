@@ -3,6 +3,7 @@ import MainLayout from '@/layouts/MainLayout'
 import LayoutWithFixedHeader from '@/layouts/LayoutWithFixedHeader'
 import HomePage from '@/pages/HomePage'
 import MoviesPage from '@/pages/MoviesPage'
+import MoviePage from '@/pages/MoviePage'
 import SupportPage from '@/pages/SupportPage'
 import SubscriptionsPage from '@/pages/SubscriptionsPage'
 
@@ -15,6 +16,7 @@ function App() {
 
       <Route element={<MainLayout />}>
         <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/movie" element={<MoviePage />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/subscriptions" element={<SubscriptionsPage />} />
       </Route>
