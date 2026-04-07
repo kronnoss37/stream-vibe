@@ -15,6 +15,16 @@
     }
   }
 
+  &--rounded {
+    column-gap: fluid-to-laptop(10, 8);
+    background-color: transparent;
+
+    .slider-navigation__arrow-button {
+      border: var(--border-base);
+      border-radius: 50%;
+    }
+  }
+
   &--abs-bottom {
     position: absolute;
     z-index: 1;

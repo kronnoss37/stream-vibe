@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import type { Swiper as SwiperType } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules'
-import SliderNavigation from './components/SliderNavigation'
+import SliderNavigation, { type Mode } from './components/SliderNavigation'
 import useSliderModules from '@/hooks/useSliderModules'
 import type {
   NavigationRefs,
@@ -58,6 +58,7 @@ interface SliderProps {
   navigation?: NavigationRefs
   pagination?: PaginationRefs
   scrollbar?: ScrollbarRefs
+  navigationMode?: Mode
   sliderParams?: SliderParamsType
   withInternalNavigation?: boolean
   isBeyondTheViewportOnMobileS?: boolean
@@ -70,6 +71,7 @@ const Slider = ({
   navigation,
   pagination,
   scrollbar,
+  navigationMode,
   sliderParams = defaultSliderParams,
   withInternalNavigation = false,
   isBeyondTheViewportOnMobileS = false,
@@ -108,6 +110,7 @@ const Slider = ({
           className="slider__navigation"
           navigation={navigation}
           pagination={pagination}
+          mode={navigationMode}
           position={navigationPosition}
           isHiddenMobile={isNavigationHiddenMobile}
         />

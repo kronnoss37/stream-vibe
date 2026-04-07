@@ -18,9 +18,9 @@ interface PaginationRefs {
 type SwiperRef = RefObject<Swiper | null>
 
 type SliderParamsType = {
-  slidesPerView: number
-  slidesPerGroup?: number
-  spaceBetween?: number
+  slidesPerView: SwiperOptions['slidesPerView']
+  slidesPerGroup?: SwiperOptions['slidesPerGroup']
+  spaceBetween?: SwiperOptions['spaceBetween']
   breakpoints?: SwiperOptions['breakpoints']
 }
 
