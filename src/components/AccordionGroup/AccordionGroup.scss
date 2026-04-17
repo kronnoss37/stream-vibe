@@ -1,9 +1,9 @@
 .accordion-group {
   &--2-columns {
-    // - спец. свойство для расположения эл-тов в 2 колонки, без grid или flex, т.к. эл-ты должны идти друг под другом, а не слева на право
     column-gap: fluid-to-laptop(80, 40);
 
     @include tablet-above {
+      // - спец. свойство для расположения эл-тов в 2 колонки, без grid или flex, т.к. эл-ты должны идти друг под другом, а не слева на право
       column-count: 2;
     }
   }
@@ -43,6 +43,26 @@
         @include mobile {
           border-radius: var(--border-radius-xs);
         }
+      }
+    }
+  }
+
+  &--dark {
+    display: grid;
+    row-gap: fluid-to-laptop(20, 16);
+
+    .accordion-group__item {
+      padding: fluid(24, 16) fluid(50, 20);
+      background-color: var(--color-black-06);
+      border: var(--border-base);
+      border-radius: var(--border-radius-l);
+
+      @include laptop {
+        border-radius: var(--border-radius-m);
+      }
+
+      &::after {
+        display: none;
       }
     }
   }

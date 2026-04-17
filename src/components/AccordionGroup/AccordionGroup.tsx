@@ -3,12 +3,16 @@ import classNames from 'classnames'
 import './AccordionGroup.scss'
 
 interface AccordionGroupProps {
+  className?: string
+  mode?: 'dark'
   columns?: number
   isOrderedList?: boolean
   children: ReactNode[]
 }
 
 const AccordionGroup = ({
+  className,
+  mode,
   columns = 1,
   isOrderedList = true,
   children,
@@ -18,9 +22,10 @@ const AccordionGroup = ({
 
   return (
     <ListTag
-      className={classNames('accordion-group', {
+      className={classNames(className, 'accordion-group', {
         [`accordion-group--${columns}-columns`]: columns > 1,
         'accordion-group--has-counter': isOrderedList,
+        [`accordion-group--${mode}`]: mode,
       })}
     >
       {children.map((child, index) => (
