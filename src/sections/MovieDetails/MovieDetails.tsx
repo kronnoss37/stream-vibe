@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import useSliderNavigation from '@/hooks/useSliderNavigation'
 import useSliderPagination from '@/hooks/useSliderPagination'
 import Slider from '@/components/Slider'
@@ -13,7 +14,11 @@ import { reviewItems } from '@/data/reviewItems'
 
 import './MovieDetails.scss'
 
-const MovieDetails = () => {
+interface MovieDetailsProps {
+  seasons?: ReactNode
+}
+
+const MovieDetails = ({ seasons }: MovieDetailsProps) => {
   const castNavigation = useSliderNavigation()
   const reviewsNavigation = useSliderNavigation()
   const reviewsPagination = useSliderPagination()
@@ -25,6 +30,14 @@ const MovieDetails = () => {
         Detailed movie information
       </h2>
       <div className="movie-details__main">
+        {seasons && (
+          <div className="movie-details__panel movie-details__panel--seasons">
+            <div className="movie-details__group movie-details__group--big-gap-y">
+              <h3 className="h4">Seasons and Episodes</h3>
+              {seasons}
+            </div>
+          </div>
+        )}
         <div className="movie-details__panel movie-details__panel--description">
           <div className="movie-details__group">
             <h3 className="movie-details__title">Description</h3>
