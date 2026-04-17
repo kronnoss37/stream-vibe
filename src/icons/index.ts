@@ -16,6 +16,9 @@ import CalendarIcon from '@/icons/CalendarIcon'
 import TranslateIcon from '@/icons/TranslateIcon'
 import StarIcon from '@/icons/StarIcon'
 import GenresIcon from '@/icons/GenresIcon'
+import ArrowDownIcon from '@/icons/ArrowDownIcon'
+import PlayCircleIcon from '@/icons/PlayCircleIcon'
+import ClockTransparentIcon from '@/icons/ClockTransparentIcon'
 
 export const icons = {
   search: SearchIcon,
@@ -26,6 +29,7 @@ export const icons = {
   play: PlayIcon,
   'arrow-right': ArrowRightIcon,
   'arrow-left': ArrowLeftIcon,
+  'arrow-down': ArrowDownIcon,
   plus: PlusIcon,
   like: LikeIcon,
   volume: VolumeIcon,
@@ -36,4 +40,6 @@ export const icons = {
   translate: TranslateIcon,
   star: StarIcon,
   genres: GenresIcon,
+  'play-circle': PlayCircleIcon,
+  'clock-transparent': ClockTransparentIcon,
 }
