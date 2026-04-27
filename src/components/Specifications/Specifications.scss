@@ -1,0 +1,29 @@
+.specifications {
+  padding: 24px;
+  background-color: var(--color-black-06);
+  border: var(--border-base);
+  border-radius: var(--border-radius-l);
+  font-weight: 500;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 20px;
+    grid-auto-flow: dense; // заполняет свободные ячейки элементами, если их размеры позволяют это
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4px;
+
+    &--wide {
+      grid-column: -1 / 1;
+    }
+  }
+
+  &__description {
+    color: var(--color-gray-95);
+  }
+}
