@@ -16,9 +16,9 @@
 
 @mixin flex-center($isInline: false) {
   @if ($isInline) {
-    display: flex;
-  } @else {
     display: inline-flex;
+  } @else {
+    display: flex;
   }
 
   justify-content: center;
