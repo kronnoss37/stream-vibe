@@ -1,11 +1,18 @@
 import useTitle from '@/hooks/useTitle'
+import Support from '@/sections/Support'
+import Questions from '@/sections/Questions'
 
-const title = 'Support Page'
+const title = 'Support'
 
 const SupportPage = () => {
   useTitle(title)
 
-  return <div>SupportPage</div>
+  return (
+    <>
+      <Support />
+      <Questions />
+    </>
+  )
 }
 
 export default SupportPage

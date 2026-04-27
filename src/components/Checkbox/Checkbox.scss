@@ -1,0 +1,63 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  column-gap: fluid-to-laptop(10, 8);
+
+  @include transition((color));
+  @include hover {
+    color: var(--color-white);
+
+    .checkbox__input {
+      color: var(--color-white);
+    }
+  }
+
+  &__input {
+    // для стилизации кастомного чекбокса
+    appearance: none;
+
+    @include flex-center;
+    @include size(fluid-to-laptop(28, 24));
+
+    flex-shrink: 0;
+    margin: 0;
+    background-color: var(--color-black-06);
+    border: var(--border-base);
+    border-radius: var(--border-radius-xxxs);
+    cursor: pointer;
+
+    @include transition((color));
+
+    &:not(:checked)::after {
+      @include hide;
+    }
+
+    &:checked {
+      background-color: var(--color-red-45);
+    }
+
+    &:user-invalid {
+      border-color: var(--color-red-45);
+    }
+
+    &:disabled {
+      &,
+      & + .checkbox__label {
+        @include disabled;
+      }
+    }
+
+    &:required {
+      & + .checkbox__label::after {
+        content: ' *' / ''; // после символа '/' указывается текст для скринридеров
+        color: var(--color-red-45);
+      }
+    }
+
+    &::after {
+      content: '✔';
+      color: var(--color-white);
+      transition-duration: inherit;
+    }
+  }
+}
