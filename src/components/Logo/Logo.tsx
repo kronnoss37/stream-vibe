@@ -1,8 +1,8 @@
 import { Link } from 'react-router'
 import classNames from 'classnames'
 
+import LogoImage from '@/assets/images/logo.svg'
 import './Logo.scss'
-import LogoImage from '/logo.svg'
 
 interface LogoProps {
   className?: string

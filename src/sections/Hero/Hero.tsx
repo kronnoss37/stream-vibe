@@ -1,6 +1,6 @@
 import { Button } from '@/components/Button'
 
-import PlayImage from '/play.svg'
+import PlayImage from '@/assets/images/play.svg'
 import './Hero.scss'
 
 const Hero = () => {
