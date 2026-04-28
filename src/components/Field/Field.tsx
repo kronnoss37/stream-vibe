@@ -35,6 +35,8 @@ const Field = ({
     IMask(fieldRef.current, { mask })
   }, [mask])
 
+  const fieldControlClassName = 'field__control'
+
   return (
     <div className={classNames(className, 'field')}>
       <label htmlFor={id} className="field__label">
@@ -46,10 +48,10 @@ const Field = ({
         )}
       </label>
       <div className="field__body">
-        {renderBefore?.('field__control')}
+        {renderBefore?.(fieldControlClassName)}
         {type === 'textarea' ? (
           <textarea
-            className="field__control"
+            className={fieldControlClassName}
             id={id}
             placeholder={placeholder}
             required={isRequired}
@@ -57,7 +59,7 @@ const Field = ({
           />
         ) : (
           <input
-            className="field__control"
+            className={fieldControlClassName}
             id={id}
             type={type}
             placeholder={placeholder}
