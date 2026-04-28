@@ -17,7 +17,7 @@
         rgba(34, 14, 14, 0.91) 46.72%,
         rgba(229, 0, 0, 0) 168.98%
       ),
-      url('../../assets/images/banner/bg.png') center/cover no-repeat;
+      url('@/assets/images/banner/bg.png') center/cover no-repeat;
     border: var(--border-base);
     border-radius: var(--border-radius-l);
 
@@ -28,7 +28,7 @@
     }
 
     @include mobile-s {
-      background-image: url('../../assets/images/banner/bg_mobile.png');
+      background-image: url('@/assets/images/banner/bg_mobile.png');
     }
   }
 
