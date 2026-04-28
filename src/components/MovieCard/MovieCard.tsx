@@ -23,7 +23,7 @@ export interface MovieCardProps {
 }
 
 const MovieCard = ({
-  link = '/movies',
+  link = '/movie',
   title,
   imgSrc,
   duration,
