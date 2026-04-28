@@ -31,6 +31,7 @@ const MoviesBanner = () => {
           }}
           withInternalNavigation
           navigationPosition="abs-bottom"
+          navigationJustifyContent="space-between"
         >
           {movieCards.map(({ id, ...movieCard }) => (
             <MovieBannerCard key={id} {...movieCard} />

@@ -1,7 +1,5 @@
 .slider-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-center;
 
   &--tile {
     column-gap: fluid-to-laptop(16, 12);
@@ -30,6 +28,10 @@
     z-index: 1;
     inset-inline: fluid-to-laptop(50, 40);
     bottom: fluid-to-laptop(20, 16);
+  }
+
+  &--space-between {
+    justify-content: space-between;
   }
 
   &__arrow-button {

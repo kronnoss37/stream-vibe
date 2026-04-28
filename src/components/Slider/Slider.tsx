@@ -63,6 +63,7 @@ interface SliderProps {
   withInternalNavigation?: boolean
   isBeyondTheViewportOnMobileS?: boolean
   navigationPosition?: 'abs-bottom'
+  navigationJustifyContent?: 'space-between'
   isNavigationHiddenMobile?: boolean
 }
 
@@ -76,6 +77,7 @@ const Slider = ({
   withInternalNavigation = false,
   isBeyondTheViewportOnMobileS = false,
   navigationPosition,
+  navigationJustifyContent,
   isNavigationHiddenMobile = true,
 }: SliderProps) => {
   const swiperRef = useRef<SwiperType>(null)
@@ -112,6 +114,7 @@ const Slider = ({
           pagination={pagination}
           mode={navigationMode}
           position={navigationPosition}
+          justifyContent={navigationJustifyContent}
           isHiddenMobile={isNavigationHiddenMobile}
         />
       )}

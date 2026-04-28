@@ -12,6 +12,7 @@ interface SliderNavigationProps {
   navigation?: NavigationRefs
   pagination?: PaginationRefs
   position?: 'abs-bottom'
+  justifyContent?: 'space-between'
   isHiddenMobile?: boolean
   buttonMode?: ButtonMode
 }
@@ -22,6 +23,7 @@ const SliderNavigation = ({
   navigation,
   pagination,
   position,
+  justifyContent,
   isHiddenMobile,
   buttonMode = 'black-10',
 }: SliderNavigationProps) => {
@@ -35,6 +37,7 @@ const SliderNavigation = ({
       className={classNames(className, 'slider-navigation', {
         [`slider-navigation--${mode}`]: mode,
         [`slider-navigation--${position}`]: position,
+        [`slider-navigation--${justifyContent}`]: justifyContent,
         'hidden-mobile': isHiddenMobile,
       })}
     >
