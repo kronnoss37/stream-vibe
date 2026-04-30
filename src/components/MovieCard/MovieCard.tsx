@@ -4,7 +4,6 @@ import Badge from '@/components/Badge'
 import RatingView from '@/components/RatingView'
 
 import './MovieCard.scss'
-
 export interface MovieCardProps {
   link?: string
   title: string
@@ -63,7 +62,7 @@ const MovieCard = ({
         )}
 
         {released && (
-          <Badge className="movie-card__released-badge">
+          <Badge className="movie-card__released-badge" isBig>
             Released at{' '}
             <time
               className="movie-card__released-badge-label"

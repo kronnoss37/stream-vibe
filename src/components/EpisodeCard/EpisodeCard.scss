@@ -24,7 +24,7 @@
     font-weight: 600;
 
     @include mobile {
-      grid-column: number;
+      grid-area: number;
     }
   }
 
@@ -72,7 +72,7 @@
 
     padding: 0;
     color: var(--color-white);
-    // функция для смешивания двух цветов в цветом пространстве srgb для получения нового создания нового оттенка
+    // функция для смешивания двух цветов в цветом пространстве srgb для получения нового оттенка
     background-color: color-mix(in srgb, var(--color-black) 60%, transparent);
     border: none;
     border-radius: 50%;
