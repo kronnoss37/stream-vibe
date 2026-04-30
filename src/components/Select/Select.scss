@@ -2,13 +2,13 @@
   --selectButtonArrowIconUrl: url('@/assets/images/select/arrow-down_gray.svg');
   --selectButtonArrowIconSize: #{fluid-to-laptop(24, 20)};
   --selectButtonGapX: #{fluid-to-laptop(6, 4)};
-  --selectButtonPuddingX: #{fluid-to-laptop(12, 8)};
+  --selectButtonPuddingX: var(--field-padding-x);
 
   flex-shrink: 0;
 
   &__original-control,
   &__button {
-    min-width: 94px;
+    min-width: 75px;
   }
 
   &__original-control {
@@ -97,7 +97,7 @@
 
     &.is-on-the-left-side {
       left: 0;
-      transform-origin: 0 0;
+      transform-origin: 0 0; // точка привязки, относительно которого происходит transform (левый верхний угол)
     }
 
     &.is-on-the-right-side {

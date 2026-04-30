@@ -1108,7 +1108,7 @@ export const collectionGroups: CollectionGroup[] = [
         movieItems: [
           {
             id: 1,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger things',
             imgSrc: 'src/assets/images/shows/trending/1.jpg',
             duration: '8h 20min',
@@ -1116,7 +1116,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 2,
-            link: '/shows',
+            link: '/show',
             title: 'Money heist',
             imgSrc: 'src/assets/images/shows/trending/2.jpg',
             duration: '12h 23min',
@@ -1124,7 +1124,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 3,
-            link: '/shows',
+            link: '/show',
             title: 'Lucifer',
             imgSrc: 'src/assets/images/shows/trending/3.jpg',
             duration: '14h 30min',
@@ -1132,7 +1132,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 4,
-            link: '/shows',
+            link: '/show',
             title: 'The gray man',
             imgSrc: 'src/assets/images/shows/trending/4.jpg',
             duration: '7h 40min',
@@ -1141,7 +1141,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 5,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger things 2',
             imgSrc: 'src/assets/images/shows/trending/1.jpg',
             duration: '8h 20min',
@@ -1149,7 +1149,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 6,
-            link: '/shows',
+            link: '/show',
             title: 'Money heist 2',
             imgSrc: 'src/assets/images/shows/trending/2.jpg',
             duration: '12h 23min',
@@ -1157,7 +1157,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 7,
-            link: '/shows',
+            link: '/show',
             title: 'Lucifer 2',
             imgSrc: 'src/assets/images/shows/trending/3.jpg',
             duration: '14h 30min',
@@ -1165,7 +1165,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 8,
-            link: '/shows',
+            link: '/show',
             title: 'The gray man 2',
             imgSrc: 'src/assets/images/shows/trending/4.jpg',
             duration: '7h 40min',
@@ -1174,7 +1174,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 9,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger things 3',
             imgSrc: 'src/assets/images/shows/trending/1.jpg',
             duration: '8h 20min',
@@ -1182,7 +1182,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 10,
-            link: '/shows',
+            link: '/show',
             title: 'Money heist 3',
             imgSrc: 'src/assets/images/shows/trending/2.jpg',
             duration: '12h 23min',
@@ -1190,7 +1190,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 11,
-            link: '/shows',
+            link: '/show',
             title: 'Lucifer 3',
             imgSrc: 'src/assets/images/shows/trending/3.jpg',
             duration: '14h 30min',
@@ -1198,7 +1198,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 12,
-            link: '/shows',
+            link: '/show',
             title: 'The gray man 3',
             imgSrc: 'src/assets/images/shows/trending/4.jpg',
             duration: '7h 40min',
@@ -1207,7 +1207,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 13,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger things 4',
             imgSrc: 'src/assets/images/shows/trending/1.jpg',
             duration: '8h 20min',
@@ -1215,7 +1215,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 14,
-            link: '/shows',
+            link: '/show',
             title: 'Money heist 4',
             imgSrc: 'src/assets/images/shows/trending/2.jpg',
             duration: '12h 23min',
@@ -1223,7 +1223,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 15,
-            link: '/shows',
+            link: '/show',
             title: 'Lucifer 4',
             imgSrc: 'src/assets/images/shows/trending/3.jpg',
             duration: '14h 30min',
@@ -1231,7 +1231,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 16,
-            link: '/shows',
+            link: '/show',
             title: 'The gray man 4',
             imgSrc: 'src/assets/images/shows/trending/4.jpg',
             duration: '7h 40min',
@@ -1286,7 +1286,7 @@ export const collectionGroups: CollectionGroup[] = [
         movieItems: [
           {
             id: 1,
-            link: '/shows',
+            link: '/show',
             title: 'High town',
             imgSrc: 'src/assets/images/shows/released/1.jpg',
             duration: '12h 23min',
@@ -1294,7 +1294,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 2,
-            link: '/shows',
+            link: '/show',
             title: 'Mirzapur',
             imgSrc: 'src/assets/images/shows/released/2.jpg',
             duration: '7h 40min',
@@ -1302,7 +1302,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 3,
-            link: '/shows',
+            link: '/show',
             title: 'Breathe into the shadows',
             imgSrc: 'src/assets/images/shows/released/3.jpg',
             duration: '8h 20min',
@@ -1310,7 +1310,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 4,
-            link: '/shows',
+            link: '/show',
             title: 'Peaky blinders',
             imgSrc: 'src/assets/images/shows/released/4.jpg',
             duration: '10h 30min',
@@ -1319,7 +1319,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 5,
-            link: '/shows',
+            link: '/show',
             title: 'High town 2',
             imgSrc: 'src/assets/images/shows/released/1.jpg',
             duration: '12h 23min',
@@ -1327,7 +1327,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 6,
-            link: '/shows',
+            link: '/show',
             title: 'Mirzapur 2',
             imgSrc: 'src/assets/images/shows/released/2.jpg',
             duration: '7h 40min',
@@ -1335,7 +1335,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 7,
-            link: '/shows',
+            link: '/show',
             title: 'Breathe into the shadows 2',
             imgSrc: 'src/assets/images/shows/released/3.jpg',
             duration: '8h 20min',
@@ -1343,7 +1343,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 8,
-            link: '/shows',
+            link: '/show',
             title: 'Peaky blinders 2',
             imgSrc: 'src/assets/images/shows/released/4.jpg',
             duration: '10h 30min',
@@ -1352,7 +1352,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 9,
-            link: '/shows',
+            link: '/show',
             title: 'High town 3',
             imgSrc: 'src/assets/images/shows/released/1.jpg',
             duration: '12h 23min',
@@ -1360,7 +1360,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 10,
-            link: '/shows',
+            link: '/show',
             title: 'Mirzapur 3',
             imgSrc: 'src/assets/images/shows/released/2.jpg',
             duration: '7h 40min',
@@ -1368,7 +1368,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 11,
-            link: '/shows',
+            link: '/show',
             title: 'Breathe into the shadows 3',
             imgSrc: 'src/assets/images/shows/released/3.jpg',
             duration: '8h 20min',
@@ -1376,7 +1376,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 12,
-            link: '/shows',
+            link: '/show',
             title: 'Peaky blinders 3',
             imgSrc: 'src/assets/images/shows/released/4.jpg',
             duration: '10h 30min',
@@ -1385,7 +1385,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 13,
-            link: '/shows',
+            link: '/show',
             title: 'High town 4',
             imgSrc: 'src/assets/images/shows/released/1.jpg',
             duration: '12h 23min',
@@ -1393,7 +1393,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 14,
-            link: '/shows',
+            link: '/show',
             title: 'Mirzapur 4',
             imgSrc: 'src/assets/images/shows/released/2.jpg',
             duration: '7h 40min',
@@ -1401,7 +1401,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 15,
-            link: '/shows',
+            link: '/show',
             title: 'Breathe into the shadows 4',
             imgSrc: 'src/assets/images/shows/released/3.jpg',
             duration: '8h 20min',
@@ -1409,7 +1409,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 16,
-            link: '/shows',
+            link: '/show',
             title: 'Peaky blinders 4',
             imgSrc: 'src/assets/images/shows/released/4.jpg',
             duration: '10h 30min',
@@ -1464,7 +1464,7 @@ export const collectionGroups: CollectionGroup[] = [
         movieItems: [
           {
             id: 1,
-            link: '/shows',
+            link: '/show',
             title: 'Duranga',
             imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
             duration: '7h 40min',
@@ -1475,7 +1475,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 2,
-            link: '/shows',
+            link: '/show',
             title: 'Money Heist',
             imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
             duration: '12h 23min',
@@ -1486,7 +1486,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 3,
-            link: '/shows',
+            link: '/show',
             title: 'MAI',
             imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
             duration: '10h 30min',
@@ -1497,7 +1497,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 4,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger Things 3',
             imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
             duration: '8h 20min',
@@ -1509,7 +1509,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 5,
-            link: '/shows',
+            link: '/show',
             title: 'Duranga 2',
             imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
             duration: '7h 40min',
@@ -1520,7 +1520,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 6,
-            link: '/shows',
+            link: '/show',
             title: 'Money Heist 2',
             imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
             duration: '12h 23min',
@@ -1531,7 +1531,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 7,
-            link: '/shows',
+            link: '/show',
             title: 'MAI 2',
             imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
             duration: '10h 30min',
@@ -1542,7 +1542,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 8,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger Things 3 2',
             imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
             duration: '8h 20min',
@@ -1554,7 +1554,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 9,
-            link: '/shows',
+            link: '/show',
             title: 'Duranga 3',
             imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
             duration: '7h 40min',
@@ -1565,7 +1565,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 10,
-            link: '/shows',
+            link: '/show',
             title: 'Money Heist 3',
             imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
             duration: '12h 23min',
@@ -1576,7 +1576,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 11,
-            link: '/shows',
+            link: '/show',
             title: 'MAI 3',
             imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
             duration: '10h 30min',
@@ -1587,7 +1587,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 12,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger Things 3 3',
             imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
             duration: '8h 20min',
@@ -1599,7 +1599,7 @@ export const collectionGroups: CollectionGroup[] = [
 
           {
             id: 13,
-            link: '/shows',
+            link: '/show',
             title: 'Duranga 4',
             imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
             duration: '7h 40min',
@@ -1610,7 +1610,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 14,
-            link: '/shows',
+            link: '/show',
             title: 'Money Heist 4',
             imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
             duration: '12h 23min',
@@ -1621,7 +1621,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 15,
-            link: '/shows',
+            link: '/show',
             title: 'MAI 4',
             imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
             duration: '10h 30min',
@@ -1632,7 +1632,7 @@ export const collectionGroups: CollectionGroup[] = [
           },
           {
             id: 16,
-            link: '/shows',
+            link: '/show',
             title: 'Stranger Things 3 4',
             imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
             duration: '8h 20min',

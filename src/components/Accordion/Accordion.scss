@@ -42,6 +42,7 @@
       }
     }
 
+    // специфический селектор для старых браузеров для скрывания стандартной треугольной стрелочки
     &::-webkit-details-marker {
       display: none;
     }
@@ -69,7 +70,7 @@
       background-color: var(--color-white);
       border-radius: 10px;
 
-      @include transition((transform));
+      @include transition((transform), var(--transition-duration-longer));
 
       @include laptop {
         height: 2px;
@@ -97,12 +98,12 @@
     border: var(--border-base);
     border-radius: 50%;
 
-    @include transition((transform));
+    @include transition((transform), var(--transition-duration-longer));
   }
 
   &__content {
     display: grid;
-    grid-template-rows: 0fr; // для плавного перехода открытия аккордиона, контент получает 0 высоты, а за счет "overflow: hidden;" ниже, контент обрезается. При открытии задаем 1fr
+    grid-template-rows: 0fr; // для плавного перехода открытия аккордеона, контент получает 0 высоты, а за счет "overflow: hidden;" ниже, контент обрезается. При открытии задаем 1fr
     transition-duration: var(--transition-duration-longer);
 
     &-inner {

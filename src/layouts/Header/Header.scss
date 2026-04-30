@@ -8,15 +8,27 @@
 
   animation-name: scrolling-header;
   animation-fill-mode: both; // для того, чтобы анимация в конечной точке не сбрасывалась
-  animation-timeline: scroll();
+  animation-timeline: scroll(
+
+  ); // использовать скролл как показатель анимации, вместо времени
   animation-range: 0 100px;
+
+  @mixin scrolling-header-styles {
+    background-color: var(--color-black-08);
+    border-color: var(--color-black-15);
+  }
 
   @keyframes scrolling-header {
     to {
-      // padding-block: 10px;
-      background-color: var(--color-black-08);
-      border-color: var(--color-black-15);
+      @include scrolling-header-styles;
     }
+  }
+
+  // для браузеров, у которых не поддерживается данное свойство
+  @supports (not (animation-timeline: scroll())) {
+    @include scrolling-header-styles;
+
+    position: sticky !important;
   }
 
   &.is-fixed {
@@ -24,10 +36,13 @@
   }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__overlay-menu-dialog {
@@ -45,27 +60,31 @@
     border: none;
 
     transition-duration: var(--transition-duration);
+    // дял того, чтобы анимировать свойство display
     transition-behavior: allow-discrete;
-
-    @include tablet-above {
-      display: contents;
-    }
 
     @mixin starting-styles {
       opacity: 0;
       transform: translate(50%);
     }
 
-    &[open] {
-      display: flex;
-
-      @starting-style {
-        @include starting-styles;
-      }
+    @include tablet-above {
+      display: contents;
     }
 
-    &:not([open]) {
-      @include starting-styles;
+    @include tablet {
+      &[open] {
+        display: flex;
+
+        // задает стили, которое браузер должен применить в начальный момент анимации
+        @starting-style {
+          @include starting-styles;
+        }
+      }
+
+      &:not([open]) {
+        @include starting-styles;
+      }
     }
   }
 
@@ -85,7 +104,6 @@
 
     @include tablet {
       display: flex;
-      // flex-direction: column;
       justify-content: center;
       height: 100%;
 
@@ -134,9 +152,13 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
+
+    @include tablet-above {
+      justify-content: flex-end;
+    }
   }
 
   &__burger-button {
-    position: relative;
+    position: relative; // для отрисовки кнопки выше, чем overlay menu
   }
 }

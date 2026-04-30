@@ -10,7 +10,6 @@ import type {
   PaginationOptions,
   ScrollbarOptions,
 } from 'swiper/types'
-
 interface SliderModulesProps {
   swiperRef: SwiperRef
   navigation?: NavigationRefs
@@ -25,8 +24,6 @@ const useSliderModules = ({
   scrollbar,
 }: SliderModulesProps) => {
   useEffect(() => {
-    console.log('swiper effect')
-
     const swiper = swiperRef.current
     if (!swiper) return
 

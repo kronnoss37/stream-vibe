@@ -24,8 +24,8 @@ const AccordionGroup = ({
     <ListTag
       className={classNames(className, 'accordion-group', {
         [`accordion-group--${columns}-columns`]: columns > 1,
-        'accordion-group--has-counter': isOrderedList,
         [`accordion-group--${mode}`]: mode,
+        'accordion-group--has-counter': isOrderedList,
       })}
     >
       {children.map((child, index) => (
@@ -33,7 +33,7 @@ const AccordionGroup = ({
           key={index}
           className={classNames('accordion-group__item', {
             'accordion-group__item--last-column-item':
-              columns > 1 && itemsPerColumn / (index + 1) === 1,
+              columns > 1 && (index + 1) % itemsPerColumn === 0,
           })}
         >
           {child}

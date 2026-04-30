@@ -12,23 +12,7 @@
 
   &__pano {
     --heroPanoGradientColorStart: var(--color-black-08);
-    --heroPanoGradientColorEnd: rgb(20 20 20 / 0);
-
-    --heroPanoGradientHeight: 67.5%;
-
-    --heroPanoGradientTop: linear-gradient(
-        to bottom,
-        var(--heroPanoGradientColorStart) 0%,
-        var(--heroPanoGradientColorEnd) 100%
-      )
-      50% 0/100% var(--heroPanoGradientHeight);
-
-    --heroPanoGradientBottom: linear-gradient(
-        to top,
-        var(--heroPanoGradientColorStart) 0%,
-        var(--heroPanoGradientColorEnd) 100%
-      )
-      50% 101%/100% var(--heroPanoGradientHeight);
+    --heroPanoGradientColorEnd: transparent 67.5%;
 
     @include flex-center;
     flex-grow: 1;
@@ -36,8 +20,16 @@
     padding-bottom: fluid(131, 50);
 
     background:
-      var(--heroPanoGradientTop),
-      var(--heroPanoGradientBottom),
+      linear-gradient(
+        to bottom,
+        var(--heroPanoGradientColorStart),
+        var(--heroPanoGradientColorEnd)
+      ),
+      linear-gradient(
+        to top,
+        var(--heroPanoGradientColorStart),
+        var(--heroPanoGradientColorEnd)
+      ),
       url('@/assets/images/hero/bg.png') 50% / cover;
     background-repeat: no-repeat;
   }

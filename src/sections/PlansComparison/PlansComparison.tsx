@@ -1,17 +1,9 @@
 import { useState } from 'react'
 import Section from '@/layouts/Section'
-import Table, { type HeadCell, type RowItem } from '@/components/Table'
-import Badge from '@/components/Badge'
+import Table from '@/components/Table'
 import Specifications from '@/components/Specifications'
 import Tabs from '@/components/Tabs'
-
-type PlanHeadCell = {
-  tabsTitle?: string
-} & HeadCell
-
-type PlanRowItem = {
-  isWide?: boolean
-} & RowItem
+import { headCells, rows, type PlanHeadCell } from '@/data/planCellsAndRows'
 
 const PlansComparison = () => {
   const data = {
@@ -21,92 +13,13 @@ const PlansComparison = () => {
       "StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.",
   }
 
-  const headCells: PlanHeadCell[] = [
-    {
-      children: 'Features',
-      width: '25%',
-    },
-    {
-      children: 'Basic',
-      width: '25%',
-      tabsTitle: 'Basic',
-    },
-    {
-      children: (
-        <>
-          Standard&nbsp;&nbsp;<Badge mode="accent">Popular</Badge>
-        </>
-      ),
-      width: '25%',
-      tabsTitle: 'Standard',
-    },
-    {
-      children: 'Premium',
-      width: '25%',
-      tabsTitle: 'Premium',
-    },
-  ]
-
-  const rows: PlanRowItem[] = [
-    {
-      cells: ['Price', '$9.99/Month', '$12.99/Month', '$14.99/Month'],
-    },
-    {
-      cells: [
-        'Content',
-        'Access to a wide selection of movies and shows, including some new releases.',
-        'Access to a wider selection of movies and shows, including most new releases and exclusive content',
-        'Access to a widest selection of movies and shows, including all new releases and Offline Viewing',
-      ],
-      isWide: true,
-    },
-    {
-      cells: [
-        'Devices',
-        'Watch on one device simultaneously',
-        'Watch on Two device simultaneously',
-        'Watch on Four device simultaneously',
-      ],
-      isWide: true,
-    },
-    {
-      cells: ['Free Trail', '7 Days', '7 Days', '7 Days'],
-    },
-    {
-      cells: ['Cancel Anytime', 'Yes', 'Yes', 'Yes'],
-    },
-    {
-      cells: ['HDR', 'No', 'Yes', 'Yes'],
-    },
-    {
-      cells: ['Dolby Atmos', 'No', 'Yes', 'Yes'],
-    },
-    {
-      cells: ['Ad - Free', 'No', 'Yes', 'Yes'],
-    },
-    {
-      cells: [
-        'Offline Viewing',
-        'No',
-        'Yes, for select titles.',
-        'Yes, for all titles.',
-      ],
-    },
-    {
-      cells: [
-        'Family Sharing',
-        'No',
-        'Yes, up to 5 family members.',
-        'Yes, up to 6 family members.',
-      ],
-    },
-  ]
-
   const tabItems = headCells
-    .filter(({ tabsTitle }) => tabsTitle)
+    .filter((cell): cell is PlanHeadCell & { tabsTitle: string } =>
+      Boolean(cell.tabsTitle),
+    )
     .map((headCell, headCellIndex) => ({
       id: `plans-comparison-${headCell.tabsTitle?.toLowerCase()}`,
-      title: headCell.tabsTitle as string,
+      title: headCell.tabsTitle,
       children: (
         <Specifications
           items={rows.map(({ cells, isWide }) => ({

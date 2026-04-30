@@ -1,4 +1,4 @@
-import { useEffect, useRef, type JSX } from 'react'
+import { useEffect, useRef, type JSX, type RefObject } from 'react'
 import classNames from 'classnames'
 import IMask from 'imask'
 import getIdFromTitle from '@/utils/getIdFromTitle'
@@ -55,7 +55,7 @@ const Field = ({
             id={id}
             placeholder={placeholder}
             required={isRequired}
-            ref={fieldRef as React.RefObject<HTMLTextAreaElement>}
+            ref={fieldRef as RefObject<HTMLTextAreaElement>}
           />
         ) : (
           <input
@@ -65,7 +65,7 @@ const Field = ({
             placeholder={placeholder}
             required={isRequired}
             inputMode={inputMode}
-            ref={fieldRef as React.RefObject<HTMLInputElement>}
+            ref={fieldRef as RefObject<HTMLInputElement>}
           />
         )}
       </div>

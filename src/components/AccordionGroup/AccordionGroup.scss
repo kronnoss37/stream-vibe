@@ -11,7 +11,7 @@
   &--has-counter {
     --accordionGroupCounterHeight: #{fluid(67, 46)};
 
-    counter-reset: custom-counter;
+    counter-reset: custom-counter; // создание нового счетчика и установка значения в 0
     list-style: none;
 
     .accordion-group__item {
@@ -22,6 +22,7 @@
       &::before {
         @include flex-center;
 
+        // функция, которая берет текущее значение из счетчика и превращает его в строку
         content: counter(
           custom-counter,
           decimal-leading-zero

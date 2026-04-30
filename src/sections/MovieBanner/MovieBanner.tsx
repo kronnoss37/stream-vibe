@@ -1,8 +1,6 @@
 import MovieBannerCard from '@/components/MovieBannerCard'
 import MovieBannerImg from '@/assets/images/movie-banner/2.jpg'
 
-import './MovieBanner.scss'
-
 const MovieBanner = () => {
   const titleId = 'movie-banner-title'
 

@@ -78,6 +78,10 @@ const Select = ({
 
   const selectedOption = options[selectedIndex]
 
+  const getOptionId = (index: number) => {
+    return `${id}-option-${index}`
+  }
+
   const handleOriginalControlChange = (
     event: ChangeEvent<HTMLSelectElement>,
   ) => {
@@ -122,6 +126,7 @@ const Select = ({
       <select
         className={classNames('select__original-control', buttonClassName)}
         id={IDs.originalControl}
+        aria-hidden={!isMobileDevice}
         tabIndex={isMobileDevice ? 0 : -1}
         value={selectedOption.value}
         onChange={handleOriginalControlChange}
@@ -137,12 +142,13 @@ const Select = ({
           className={classNames('select__button', buttonClassName, {
             [stateClasses.isExpanded]: isExpanded,
           })}
-          role="combobox"
+          role="combobox" // поле, которое управляет списком вариантов
           aria-expanded={isExpanded}
-          aria-activedescendant={`option-${currentIndex}`}
-          aria-haspopup="listbox"
+          aria-activedescendant={getOptionId(currentIndex)} // виртуальный фокус, указывает на ID дочернего элемента, который сейчас активный, позволяя браузеру держать фокус на кнопке, а скринридерам — озвучивать выделенный элемент
+          aria-haspopup="listbox" // индексирует появления списка
           aria-controls={IDs.dropdown}
           aria-labelledby={IDs.label}
+          aria-hidden={isMobileDevice}
           tabIndex={isMobileDevice ? -1 : 0}
           ref={selectButtonRef}
           onClick={toggleExpandedState}
@@ -166,7 +172,7 @@ const Select = ({
                 [stateClasses.isSelected]: selectedIndex === index,
                 [stateClasses.isCurrent]: currentIndex === index,
               })}
-              id={`option-${index}`}
+              id={getOptionId(index)}
               role="option"
               aria-selected={selectedIndex === index}
               onClick={() => handleOptionClick(index)}

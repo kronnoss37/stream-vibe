@@ -10,8 +10,6 @@ import MovieCard, { type MovieCardProps } from '@/components/MovieCard'
 import getIdFromTitle from '@/utils/getIdFromTitle'
 import { type SliderParamsType } from '@/types/slider'
 
-import './CollectionItem.scss'
-
 type categoryItem = CategoryCardType & {
   id: number
 }

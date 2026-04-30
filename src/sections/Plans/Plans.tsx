@@ -6,8 +6,6 @@ import Tabs from '@/components/Tabs'
 import TabsNavigation from '@/components/Tabs/components/TabsNavigation'
 import { planGroups } from '@/data/planGroups'
 
-import './Plans.scss'
-
 const Plans = () => {
   const [activeTabId, setActiveTabId] = useState(planGroups[0].id)
 

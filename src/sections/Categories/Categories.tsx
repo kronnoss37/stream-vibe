@@ -7,8 +7,6 @@ import SliderNavigation from '@/components/Slider/components/SliderNavigation'
 import CategoryCard from '@/components/CategoryCard'
 import { categoryItems } from '@/data/categoryItems'
 
-import './Categories.scss'
-
 const Categories = () => {
   const navigation = useSliderNavigation()
   const pagination = useSliderPagination()

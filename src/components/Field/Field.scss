@@ -23,9 +23,10 @@
   &__control {
     width: 100%;
     height: fluid-to-laptop(67, 53);
-    padding-inline: fluid-to-laptop(20, 16);
+    padding-inline: var(--field-padding-x);
     font-size: fluid-to-laptop(18, 14);
     font-weight: 500;
+
     color: var(--color-white);
     background-color: var(--color-black-08);
     border: var(--border-base);

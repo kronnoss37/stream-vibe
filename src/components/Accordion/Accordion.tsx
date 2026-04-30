@@ -7,7 +7,7 @@ import './Accordion.scss'
 interface AccordionProps {
   title: string
   titleLevelClassName?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-  subtitle: string
+  subtitle?: string
   id: string
   name: string
   isOpen: boolean
