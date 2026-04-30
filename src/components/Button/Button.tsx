@@ -1,12 +1,13 @@
+import { forwardRef, type ButtonHTMLAttributes } from 'react'
 import classNames from 'classnames'
 import { type ButtonBase } from '@/types/button'
 import ButtonContent from './ButtonContent'
 import './Button.scss'
-import { forwardRef, type ButtonHTMLAttributes } from 'react'
 
 type ButtonProps = ButtonBase &
   Omit<ButtonHTMLAttributes<HTMLButtonElement>, keyof ButtonBase>
 
+// forwardRef - ключевое слово, которое используется для прокидывания ref через компонент, т.к. к компоненту нельзя применить ref
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {

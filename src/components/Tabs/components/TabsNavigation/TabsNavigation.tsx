@@ -1,11 +1,11 @@
 import classNames from 'classnames'
 import getIdFromTitle from '@/utils/getIdFromTitle'
-import './TabsNavigation.scss'
 import getTabsElementsIdsFromTitle from '@/components/Tabs/utils/getTabsElementsIdsFromTitle'
 import useTabsKeyboardNavigation from '@/hooks/useTabsKeyboardNavigation'
 import useTabsNavigationIndicator from '@/hooks/useTabsNavigationIndicator'
 import { type BaseTabItem } from '@/types/tabs'
 
+import './TabsNavigation.scss'
 interface TabsNavigationProps {
   className?: string
   title: string

@@ -9,7 +9,7 @@
   border: var(--border-base);
   border-radius: var(--border-radius-l);
 
-  @include transition((border-color));
+  @include transition((border-color, color));
   @include hover {
     --categoryCardImageGradientOpacity: 0;
 
