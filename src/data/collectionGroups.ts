@@ -1,6 +1,58 @@
 import { categoryItems } from '@/data/categoryItems'
 import { type CollectionItemType } from '@/sections/Collections/components/CollectionItem'
 
+import actionImgSrc_1 from '@/assets/images/categories/action/1.jpg'
+import actionImgSrc_2 from '@/assets/images/categories/action/2.jpg'
+import actionImgSrc_3 from '@/assets/images/categories/action/3.jpg'
+import actionImgSrc_4 from '@/assets/images/categories/action/4.jpg'
+
+import adventureImgSrc_1 from '@/assets/images/categories/adventure/1.jpg'
+import adventureImgSrc_2 from '@/assets/images/categories/adventure/2.jpg'
+import adventureImgSrc_3 from '@/assets/images/categories/adventure/3.jpg'
+import adventureImgSrc_4 from '@/assets/images/categories/adventure/4.jpg'
+
+import comedyImgSrc_1 from '@/assets/images/categories/comedy/1.jpg'
+import comedyImgSrc_2 from '@/assets/images/categories/comedy/2.jpg'
+import comedyImgSrc_3 from '@/assets/images/categories/comedy/3.jpg'
+import comedyImgSrc_4 from '@/assets/images/categories/comedy/4.jpg'
+
+import dramaImgSrc_1 from '@/assets/images/categories/drama/1.jpg'
+import dramaImgSrc_2 from '@/assets/images/categories/drama/2.jpg'
+import dramaImgSrc_3 from '@/assets/images/categories/drama/3.jpg'
+import dramaImgSrc_4 from '@/assets/images/categories/drama/4.jpg'
+
+import moviesTrendingImgSrc_1 from '@/assets/images/movies/trending/1.jpg'
+import moviesTrendingImgSrc_2 from '@/assets/images/movies/trending/2.jpg'
+import moviesTrendingImgSrc_3 from '@/assets/images/movies/trending/3.jpg'
+import moviesTrendingImgSrc_4 from '@/assets/images/movies/trending/4.jpg'
+import moviesTrendingImgSrc_5 from '@/assets/images/movies/trending/5.jpg'
+
+import moviesReleasesImgSrc_1 from '@/assets/images/movies/releases/1.jpg'
+import moviesReleasesImgSrc_2 from '@/assets/images/movies/releases/2.jpg'
+import moviesReleasesImgSrc_3 from '@/assets/images/movies/releases/3.jpg'
+import moviesReleasesImgSrc_4 from '@/assets/images/movies/releases/4.jpg'
+import moviesReleasesImgSrc_5 from '@/assets/images/movies/releases/5.jpg'
+
+import moviesMustWatchImgSrc_1 from '@/assets/images/movies/must-watch/1.jpg'
+import moviesMustWatchImgSrc_2 from '@/assets/images/movies/must-watch/2.jpg'
+import moviesMustWatchImgSrc_3 from '@/assets/images/movies/must-watch/3.jpg'
+import moviesMustWatchImgSrc_4 from '@/assets/images/movies/must-watch/4.jpg'
+
+import showsTrendingImgSrc_1 from '@/assets/images/shows/trending/1.jpg'
+import showsTrendingImgSrc_2 from '@/assets/images/shows/trending/2.jpg'
+import showsTrendingImgSrc_3 from '@/assets/images/shows/trending/3.jpg'
+import showsTrendingImgSrc_4 from '@/assets/images/shows/trending/4.jpg'
+
+import showsReleasesImgSrc_1 from '@/assets/images/shows/released/1.jpg'
+import showsReleasesImgSrc_2 from '@/assets/images/shows/released/2.jpg'
+import showsReleasesImgSrc_3 from '@/assets/images/shows/released/3.jpg'
+import showsReleasesImgSrc_4 from '@/assets/images/shows/released/4.jpg'
+
+import showsMustWatchImgSrc_1 from '@/assets/images/shows/must-watch/1.jpg'
+import showsMustWatchImgSrc_2 from '@/assets/images/shows/must-watch/2.jpg'
+import showsMustWatchImgSrc_3 from '@/assets/images/shows/must-watch/3.jpg'
+import showsMustWatchImgSrc_4 from '@/assets/images/shows/must-watch/4.jpg'
+
 interface CollectionItem extends CollectionItemType {
   id: number
 }
@@ -30,10 +82,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -41,10 +93,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -52,10 +104,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -63,10 +115,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
 
@@ -75,10 +127,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -86,10 +138,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -97,10 +149,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -108,10 +160,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
 
@@ -120,10 +172,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -131,10 +183,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -142,10 +194,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -153,10 +205,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
 
@@ -165,10 +217,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -176,10 +228,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -187,10 +239,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -198,10 +250,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
         ],
@@ -248,35 +300,35 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 1,
             title: 'Morbius',
-            imgSrc: 'src/assets/images/movies/trending/1.jpg',
+            imgSrc: moviesTrendingImgSrc_1,
             duration: '1h 30min',
             views: '2K',
           },
           {
             id: 2,
             title: 'Bhai Jaan',
-            imgSrc: 'src/assets/images/movies/trending/2.jpg',
+            imgSrc: moviesTrendingImgSrc_2,
             duration: '1h 57min',
             views: '1.5K',
           },
           {
             id: 3,
             title: 'Mangal',
-            imgSrc: 'src/assets/images/movies/trending/3.jpg',
+            imgSrc: moviesTrendingImgSrc_3,
             duration: '2h 10min',
             views: '1.8K',
           },
           {
             id: 4,
             title: 'Pathan',
-            imgSrc: 'src/assets/images/movies/trending/4.jpg',
+            imgSrc: moviesTrendingImgSrc_4,
             duration: '2h 20min',
             views: '3K',
           },
           {
             id: 5,
             title: 'Ant-Man',
-            imgSrc: 'src/assets/images/movies/trending/5.jpg',
+            imgSrc: moviesTrendingImgSrc_5,
             duration: '1h 42min',
             views: '5K',
           },
@@ -284,35 +336,35 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 6,
             title: 'Morbius 2',
-            imgSrc: 'src/assets/images/movies/trending/1.jpg',
+            imgSrc: moviesTrendingImgSrc_1,
             duration: '1h 30min',
             views: '2K',
           },
           {
             id: 7,
             title: 'Bhai Jaan 2',
-            imgSrc: 'src/assets/images/movies/trending/2.jpg',
+            imgSrc: moviesTrendingImgSrc_2,
             duration: '1h 57min',
             views: '1.5K',
           },
           {
             id: 8,
             title: 'Mangal 2',
-            imgSrc: 'src/assets/images/movies/trending/3.jpg',
+            imgSrc: moviesTrendingImgSrc_3,
             duration: '2h 10min',
             views: '1.8K',
           },
           {
             id: 9,
             title: 'Pathan 2',
-            imgSrc: 'src/assets/images/movies/trending/4.jpg',
+            imgSrc: moviesTrendingImgSrc_4,
             duration: '2h 20min',
             views: '3K',
           },
           {
             id: 10,
             title: 'Ant-Man 2',
-            imgSrc: 'src/assets/images/movies/trending/5.jpg',
+            imgSrc: moviesTrendingImgSrc_5,
             duration: '1h 42min',
             views: '5K',
           },
@@ -320,35 +372,35 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 11,
             title: 'Morbius 3',
-            imgSrc: 'src/assets/images/movies/trending/1.jpg',
+            imgSrc: moviesTrendingImgSrc_1,
             duration: '1h 30min',
             views: '2K',
           },
           {
             id: 12,
             title: 'Bhai Jaan 3',
-            imgSrc: 'src/assets/images/movies/trending/2.jpg',
+            imgSrc: moviesTrendingImgSrc_2,
             duration: '1h 57min',
             views: '1.5K',
           },
           {
             id: 13,
             title: 'Mangal 3',
-            imgSrc: 'src/assets/images/movies/trending/3.jpg',
+            imgSrc: moviesTrendingImgSrc_3,
             duration: '2h 10min',
             views: '1.8K',
           },
           {
             id: 14,
             title: 'Pathan 3',
-            imgSrc: 'src/assets/images/movies/trending/4.jpg',
+            imgSrc: moviesTrendingImgSrc_4,
             duration: '2h 20min',
             views: '3K',
           },
           {
             id: 15,
             title: 'Ant-Man 3',
-            imgSrc: 'src/assets/images/movies/trending/5.jpg',
+            imgSrc: moviesTrendingImgSrc_5,
             duration: '1h 42min',
             views: '5K',
           },
@@ -356,35 +408,35 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 16,
             title: 'Morbius 4',
-            imgSrc: 'src/assets/images/movies/trending/1.jpg',
+            imgSrc: moviesTrendingImgSrc_1,
             duration: '1h 30min',
             views: '2K',
           },
           {
             id: 17,
             title: 'Bhai Jaan 4',
-            imgSrc: 'src/assets/images/movies/trending/2.jpg',
+            imgSrc: moviesTrendingImgSrc_2,
             duration: '1h 57min',
             views: '1.5K',
           },
           {
             id: 18,
             title: 'Mangal 4',
-            imgSrc: 'src/assets/images/movies/trending/3.jpg',
+            imgSrc: moviesTrendingImgSrc_3,
             duration: '2h 10min',
             views: '1.8K',
           },
           {
             id: 19,
             title: 'Pathan 4',
-            imgSrc: 'src/assets/images/movies/trending/4.jpg',
+            imgSrc: moviesTrendingImgSrc_4,
             duration: '2h 20min',
             views: '3K',
           },
           {
             id: 20,
             title: 'Ant-Man 4',
-            imgSrc: 'src/assets/images/movies/trending/5.jpg',
+            imgSrc: moviesTrendingImgSrc_5,
             duration: '1h 42min',
             views: '5K',
           },
@@ -438,7 +490,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 1,
             title: 'Adipurush',
-            imgSrc: 'src/assets/images/movies/releases/1.jpg',
+            imgSrc: moviesReleasesImgSrc_1,
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -447,7 +499,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 2,
             title: 'Аction with Jackie Chan',
-            imgSrc: 'src/assets/images/movies/releases/2.jpg',
+            imgSrc: moviesReleasesImgSrc_2,
             released: {
               label: '22 April 2023',
               dateTime: '2023-04-22',
@@ -456,7 +508,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 3,
             title: 'Sin city',
-            imgSrc: 'src/assets/images/movies/releases/3.jpg',
+            imgSrc: moviesReleasesImgSrc_3,
             released: {
               label: '13 April 2023',
               dateTime: '2023-04-13',
@@ -465,7 +517,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 4,
             title: 'The tomorrow war',
-            imgSrc: 'src/assets/images/movies/releases/4.jpg',
+            imgSrc: moviesReleasesImgSrc_4,
             released: {
               label: '19 April 2023',
               dateTime: '2023-04-19',
@@ -474,7 +526,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 5,
             title: 'Misfire',
-            imgSrc: 'src/assets/images/movies/releases/5.jpg',
+            imgSrc: moviesReleasesImgSrc_5,
             released: {
               label: '11 April 2023',
               dateTime: '2023-04-11',
@@ -484,7 +536,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 6,
             title: 'Adipurush 2',
-            imgSrc: 'src/assets/images/movies/releases/1.jpg',
+            imgSrc: moviesReleasesImgSrc_1,
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -493,7 +545,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 7,
             title: 'Аction with Jackie Chan 2',
-            imgSrc: 'src/assets/images/movies/releases/2.jpg',
+            imgSrc: moviesReleasesImgSrc_2,
             released: {
               label: '22 April 2023',
               dateTime: '2023-04-22',
@@ -502,7 +554,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 8,
             title: 'Sin city 2',
-            imgSrc: 'src/assets/images/movies/releases/3.jpg',
+            imgSrc: moviesReleasesImgSrc_3,
             released: {
               label: '13 April 2023',
               dateTime: '2023-04-13',
@@ -511,7 +563,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 9,
             title: 'The tomorrow war 2',
-            imgSrc: 'src/assets/images/movies/releases/4.jpg',
+            imgSrc: moviesReleasesImgSrc_4,
             released: {
               label: '19 April 2023',
               dateTime: '2023-04-19',
@@ -520,7 +572,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 10,
             title: 'Misfire 2',
-            imgSrc: 'src/assets/images/movies/releases/5.jpg',
+            imgSrc: moviesReleasesImgSrc_5,
             released: {
               label: '11 April 2023',
               dateTime: '2023-04-11',
@@ -530,7 +582,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 11,
             title: 'Adipurush 3',
-            imgSrc: 'src/assets/images/movies/releases/1.jpg',
+            imgSrc: moviesReleasesImgSrc_1,
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -539,7 +591,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 12,
             title: 'Аction with Jackie Chan 3',
-            imgSrc: 'src/assets/images/movies/releases/2.jpg',
+            imgSrc: moviesReleasesImgSrc_2,
             released: {
               label: '22 April 2023',
               dateTime: '2023-04-22',
@@ -548,7 +600,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 13,
             title: 'Sin city 3',
-            imgSrc: 'src/assets/images/movies/releases/3.jpg',
+            imgSrc: moviesReleasesImgSrc_3,
             released: {
               label: '13 April 2023',
               dateTime: '2023-04-13',
@@ -557,7 +609,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 14,
             title: 'The tomorrow war 3',
-            imgSrc: 'src/assets/images/movies/releases/4.jpg',
+            imgSrc: moviesReleasesImgSrc_4,
             released: {
               label: '19 April 2023',
               dateTime: '2023-04-19',
@@ -566,7 +618,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 15,
             title: 'Misfire 3',
-            imgSrc: 'src/assets/images/movies/releases/5.jpg',
+            imgSrc: moviesReleasesImgSrc_5,
             released: {
               label: '11 April 2023',
               dateTime: '2023-04-11',
@@ -576,7 +628,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 16,
             title: 'Adipurush 4',
-            imgSrc: 'src/assets/images/movies/releases/1.jpg',
+            imgSrc: moviesReleasesImgSrc_1,
             released: {
               label: '14 April 2023',
               dateTime: '2023-04-14',
@@ -585,7 +637,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 17,
             title: 'Аction with Jackie Chan 4',
-            imgSrc: 'src/assets/images/movies/releases/2.jpg',
+            imgSrc: moviesReleasesImgSrc_2,
             released: {
               label: '22 April 2023',
               dateTime: '2023-04-22',
@@ -594,7 +646,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 18,
             title: 'Sin city 4',
-            imgSrc: 'src/assets/images/movies/releases/3.jpg',
+            imgSrc: moviesReleasesImgSrc_3,
             released: {
               label: '13 April 2023',
               dateTime: '2023-04-13',
@@ -603,7 +655,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 19,
             title: 'The tomorrow war 4',
-            imgSrc: 'src/assets/images/movies/releases/4.jpg',
+            imgSrc: moviesReleasesImgSrc_4,
             released: {
               label: '19 April 2023',
               dateTime: '2023-04-19',
@@ -612,7 +664,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 20,
             title: 'Misfire 4',
-            imgSrc: 'src/assets/images/movies/releases/5.jpg',
+            imgSrc: moviesReleasesImgSrc_5,
             released: {
               label: '11 April 2023',
               dateTime: '2023-04-11',
@@ -668,7 +720,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 1,
             title: 'Kantara',
-            imgSrc: 'src/assets/images/movies/must-watch/1.jpg',
+            imgSrc: moviesMustWatchImgSrc_1,
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -678,7 +730,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 2,
             title: 'Pushpa',
-            imgSrc: 'src/assets/images/movies/must-watch/2.jpg',
+            imgSrc: moviesMustWatchImgSrc_2,
             duration: '1h 30min',
             rating: {
               value: 4,
@@ -688,7 +740,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 3,
             title: 'Blade runner 2049',
-            imgSrc: 'src/assets/images/movies/must-watch/3.jpg',
+            imgSrc: moviesMustWatchImgSrc_3,
             duration: '1h 42min',
             rating: {
               value: 4.5,
@@ -698,7 +750,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 4,
             title: 'Adipurush',
-            imgSrc: 'src/assets/images/movies/must-watch/4.jpg',
+            imgSrc: moviesMustWatchImgSrc_4,
             duration: '2h 10min',
             rating: {
               value: 3,
@@ -709,7 +761,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 5,
             title: 'Kantara 2',
-            imgSrc: 'src/assets/images/movies/must-watch/1.jpg',
+            imgSrc: moviesMustWatchImgSrc_1,
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -719,7 +771,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 6,
             title: 'Pushpa 2',
-            imgSrc: 'src/assets/images/movies/must-watch/2.jpg',
+            imgSrc: moviesMustWatchImgSrc_2,
             duration: '1h 30min',
             rating: {
               value: 4,
@@ -729,7 +781,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 7,
             title: 'Blade runner 2049 2',
-            imgSrc: 'src/assets/images/movies/must-watch/3.jpg',
+            imgSrc: moviesMustWatchImgSrc_3,
             duration: '1h 42min',
             rating: {
               value: 4.5,
@@ -739,7 +791,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 8,
             title: 'Adipurush 2',
-            imgSrc: 'src/assets/images/movies/must-watch/4.jpg',
+            imgSrc: moviesMustWatchImgSrc_4,
             duration: '2h 10min',
             rating: {
               value: 3,
@@ -750,7 +802,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 9,
             title: 'Kantara 3',
-            imgSrc: 'src/assets/images/movies/must-watch/1.jpg',
+            imgSrc: moviesMustWatchImgSrc_1,
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -760,7 +812,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 10,
             title: 'Pushpa 3',
-            imgSrc: 'src/assets/images/movies/must-watch/2.jpg',
+            imgSrc: moviesMustWatchImgSrc_2,
             duration: '1h 30min',
             rating: {
               value: 4,
@@ -770,7 +822,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 11,
             title: 'Blade runner 2049 3',
-            imgSrc: 'src/assets/images/movies/must-watch/3.jpg',
+            imgSrc: moviesMustWatchImgSrc_3,
             duration: '1h 42min',
             rating: {
               value: 4.5,
@@ -780,7 +832,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 12,
             title: 'Adipurush 3',
-            imgSrc: 'src/assets/images/movies/must-watch/4.jpg',
+            imgSrc: moviesMustWatchImgSrc_4,
             duration: '2h 10min',
             rating: {
               value: 3,
@@ -791,7 +843,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 13,
             title: 'Kantara 4',
-            imgSrc: 'src/assets/images/movies/must-watch/1.jpg',
+            imgSrc: moviesMustWatchImgSrc_1,
             duration: '1h 57min',
             rating: {
               value: 4.5,
@@ -801,7 +853,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 14,
             title: 'Pushpa 4',
-            imgSrc: 'src/assets/images/movies/must-watch/2.jpg',
+            imgSrc: moviesMustWatchImgSrc_2,
             duration: '1h 30min',
             rating: {
               value: 4,
@@ -811,7 +863,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 15,
             title: 'Blade runner 2049 4',
-            imgSrc: 'src/assets/images/movies/must-watch/3.jpg',
+            imgSrc: moviesMustWatchImgSrc_3,
             duration: '1h 42min',
             rating: {
               value: 4.5,
@@ -821,7 +873,7 @@ export const collectionGroups: CollectionGroup[] = [
           {
             id: 16,
             title: 'Adipurush 4',
-            imgSrc: 'src/assets/images/movies/must-watch/4.jpg',
+            imgSrc: moviesMustWatchImgSrc_4,
             duration: '2h 10min',
             rating: {
               value: 3,
@@ -891,10 +943,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -902,10 +954,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -913,10 +965,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -924,10 +976,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
 
@@ -936,10 +988,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -947,10 +999,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -958,10 +1010,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -969,10 +1021,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama 2',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
 
@@ -981,10 +1033,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -992,10 +1044,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -1003,10 +1055,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -1014,10 +1066,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama 3',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
 
@@ -1026,10 +1078,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Action 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/action/1.jpg',
-              'src/assets/images/categories/action/2.jpg',
-              'src/assets/images/categories/action/3.jpg',
-              'src/assets/images/categories/action/4.jpg',
+              actionImgSrc_1,
+              actionImgSrc_2,
+              actionImgSrc_3,
+              actionImgSrc_4,
             ],
           },
           {
@@ -1037,10 +1089,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Adventure 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/adventure/1.jpg',
-              'src/assets/images/categories/adventure/2.jpg',
-              'src/assets/images/categories/adventure/3.jpg',
-              'src/assets/images/categories/adventure/4.jpg',
+              adventureImgSrc_1,
+              adventureImgSrc_2,
+              adventureImgSrc_3,
+              adventureImgSrc_4,
             ],
           },
           {
@@ -1048,10 +1100,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Comedy 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/comedy/1.jpg',
-              'src/assets/images/categories/comedy/2.jpg',
-              'src/assets/images/categories/comedy/3.jpg',
-              'src/assets/images/categories/comedy/4.jpg',
+              comedyImgSrc_1,
+              comedyImgSrc_2,
+              comedyImgSrc_3,
+              comedyImgSrc_4,
             ],
           },
           {
@@ -1059,10 +1111,10 @@ export const collectionGroups: CollectionGroup[] = [
             title: 'Drama 4',
             badge: 'Top 10 In',
             images: [
-              'src/assets/images/categories/drama/1.jpg',
-              'src/assets/images/categories/drama/2.jpg',
-              'src/assets/images/categories/drama/3.jpg',
-              'src/assets/images/categories/drama/4.jpg',
+              dramaImgSrc_1,
+              dramaImgSrc_2,
+              dramaImgSrc_3,
+              dramaImgSrc_4,
             ],
           },
         ],
@@ -1110,7 +1162,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 1,
             link: '/show',
             title: 'Stranger things',
-            imgSrc: 'src/assets/images/shows/trending/1.jpg',
+            imgSrc: showsTrendingImgSrc_1,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1118,7 +1170,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 2,
             link: '/show',
             title: 'Money heist',
-            imgSrc: 'src/assets/images/shows/trending/2.jpg',
+            imgSrc: showsTrendingImgSrc_2,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1126,7 +1178,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 3,
             link: '/show',
             title: 'Lucifer',
-            imgSrc: 'src/assets/images/shows/trending/3.jpg',
+            imgSrc: showsTrendingImgSrc_3,
             duration: '14h 30min',
             season: '3 Season',
           },
@@ -1134,7 +1186,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 4,
             link: '/show',
             title: 'The gray man',
-            imgSrc: 'src/assets/images/shows/trending/4.jpg',
+            imgSrc: showsTrendingImgSrc_4,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1143,7 +1195,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 5,
             link: '/show',
             title: 'Stranger things 2',
-            imgSrc: 'src/assets/images/shows/trending/1.jpg',
+            imgSrc: showsTrendingImgSrc_1,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1151,7 +1203,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 6,
             link: '/show',
             title: 'Money heist 2',
-            imgSrc: 'src/assets/images/shows/trending/2.jpg',
+            imgSrc: showsTrendingImgSrc_2,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1159,7 +1211,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 7,
             link: '/show',
             title: 'Lucifer 2',
-            imgSrc: 'src/assets/images/shows/trending/3.jpg',
+            imgSrc: showsTrendingImgSrc_3,
             duration: '14h 30min',
             season: '3 Season',
           },
@@ -1167,7 +1219,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 8,
             link: '/show',
             title: 'The gray man 2',
-            imgSrc: 'src/assets/images/shows/trending/4.jpg',
+            imgSrc: showsTrendingImgSrc_4,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1176,7 +1228,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 9,
             link: '/show',
             title: 'Stranger things 3',
-            imgSrc: 'src/assets/images/shows/trending/1.jpg',
+            imgSrc: showsTrendingImgSrc_1,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1184,7 +1236,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 10,
             link: '/show',
             title: 'Money heist 3',
-            imgSrc: 'src/assets/images/shows/trending/2.jpg',
+            imgSrc: showsTrendingImgSrc_2,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1192,7 +1244,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 11,
             link: '/show',
             title: 'Lucifer 3',
-            imgSrc: 'src/assets/images/shows/trending/3.jpg',
+            imgSrc: showsTrendingImgSrc_3,
             duration: '14h 30min',
             season: '3 Season',
           },
@@ -1200,7 +1252,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 12,
             link: '/show',
             title: 'The gray man 3',
-            imgSrc: 'src/assets/images/shows/trending/4.jpg',
+            imgSrc: showsTrendingImgSrc_4,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1209,7 +1261,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 13,
             link: '/show',
             title: 'Stranger things 4',
-            imgSrc: 'src/assets/images/shows/trending/1.jpg',
+            imgSrc: showsTrendingImgSrc_1,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1217,7 +1269,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 14,
             link: '/show',
             title: 'Money heist 4',
-            imgSrc: 'src/assets/images/shows/trending/2.jpg',
+            imgSrc: showsTrendingImgSrc_2,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1225,7 +1277,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 15,
             link: '/show',
             title: 'Lucifer 4',
-            imgSrc: 'src/assets/images/shows/trending/3.jpg',
+            imgSrc: showsTrendingImgSrc_3,
             duration: '14h 30min',
             season: '3 Season',
           },
@@ -1233,7 +1285,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 16,
             link: '/show',
             title: 'The gray man 4',
-            imgSrc: 'src/assets/images/shows/trending/4.jpg',
+            imgSrc: showsTrendingImgSrc_4,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1288,7 +1340,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 1,
             link: '/show',
             title: 'High town',
-            imgSrc: 'src/assets/images/shows/released/1.jpg',
+            imgSrc: showsReleasesImgSrc_1,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1296,7 +1348,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 2,
             link: '/show',
             title: 'Mirzapur',
-            imgSrc: 'src/assets/images/shows/released/2.jpg',
+            imgSrc: showsReleasesImgSrc_2,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1304,7 +1356,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 3,
             link: '/show',
             title: 'Breathe into the shadows',
-            imgSrc: 'src/assets/images/shows/released/3.jpg',
+            imgSrc: showsReleasesImgSrc_3,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1312,7 +1364,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 4,
             link: '/show',
             title: 'Peaky blinders',
-            imgSrc: 'src/assets/images/shows/released/4.jpg',
+            imgSrc: showsReleasesImgSrc_4,
             duration: '10h 30min',
             season: '3 Season',
           },
@@ -1321,7 +1373,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 5,
             link: '/show',
             title: 'High town 2',
-            imgSrc: 'src/assets/images/shows/released/1.jpg',
+            imgSrc: showsReleasesImgSrc_1,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1329,7 +1381,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 6,
             link: '/show',
             title: 'Mirzapur 2',
-            imgSrc: 'src/assets/images/shows/released/2.jpg',
+            imgSrc: showsReleasesImgSrc_2,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1337,7 +1389,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 7,
             link: '/show',
             title: 'Breathe into the shadows 2',
-            imgSrc: 'src/assets/images/shows/released/3.jpg',
+            imgSrc: showsReleasesImgSrc_3,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1345,7 +1397,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 8,
             link: '/show',
             title: 'Peaky blinders 2',
-            imgSrc: 'src/assets/images/shows/released/4.jpg',
+            imgSrc: showsReleasesImgSrc_4,
             duration: '10h 30min',
             season: '3 Season',
           },
@@ -1354,7 +1406,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 9,
             link: '/show',
             title: 'High town 3',
-            imgSrc: 'src/assets/images/shows/released/1.jpg',
+            imgSrc: showsReleasesImgSrc_1,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1362,7 +1414,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 10,
             link: '/show',
             title: 'Mirzapur 3',
-            imgSrc: 'src/assets/images/shows/released/2.jpg',
+            imgSrc: showsReleasesImgSrc_2,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1370,7 +1422,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 11,
             link: '/show',
             title: 'Breathe into the shadows 3',
-            imgSrc: 'src/assets/images/shows/released/3.jpg',
+            imgSrc: showsReleasesImgSrc_3,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1378,7 +1430,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 12,
             link: '/show',
             title: 'Peaky blinders 3',
-            imgSrc: 'src/assets/images/shows/released/4.jpg',
+            imgSrc: showsReleasesImgSrc_4,
             duration: '10h 30min',
             season: '3 Season',
           },
@@ -1387,7 +1439,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 13,
             link: '/show',
             title: 'High town 4',
-            imgSrc: 'src/assets/images/shows/released/1.jpg',
+            imgSrc: showsReleasesImgSrc_1,
             duration: '12h 23min',
             season: '5 Season',
           },
@@ -1395,7 +1447,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 14,
             link: '/show',
             title: 'Mirzapur 4',
-            imgSrc: 'src/assets/images/shows/released/2.jpg',
+            imgSrc: showsReleasesImgSrc_2,
             duration: '7h 40min',
             season: '2 Season',
           },
@@ -1403,7 +1455,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 15,
             link: '/show',
             title: 'Breathe into the shadows 4',
-            imgSrc: 'src/assets/images/shows/released/3.jpg',
+            imgSrc: showsReleasesImgSrc_3,
             duration: '8h 20min',
             season: '4 Season',
           },
@@ -1411,7 +1463,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 16,
             link: '/show',
             title: 'Peaky blinders 4',
-            imgSrc: 'src/assets/images/shows/released/4.jpg',
+            imgSrc: showsReleasesImgSrc_4,
             duration: '10h 30min',
             season: '3 Season',
           },
@@ -1466,7 +1518,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 1,
             link: '/show',
             title: 'Duranga',
-            imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
+            imgSrc: showsMustWatchImgSrc_1,
             duration: '7h 40min',
             rating: {
               value: 4.5,
@@ -1477,7 +1529,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 2,
             link: '/show',
             title: 'Money Heist',
-            imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
+            imgSrc: showsMustWatchImgSrc_2,
             duration: '12h 23min',
             rating: {
               value: 4.5,
@@ -1488,7 +1540,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 3,
             link: '/show',
             title: 'MAI',
-            imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
+            imgSrc: showsMustWatchImgSrc_3,
             duration: '10h 30min',
             rating: {
               value: 4,
@@ -1499,7 +1551,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 4,
             link: '/show',
             title: 'Stranger Things 3',
-            imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
+            imgSrc: showsMustWatchImgSrc_4,
             duration: '8h 20min',
             rating: {
               value: 5,
@@ -1511,7 +1563,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 5,
             link: '/show',
             title: 'Duranga 2',
-            imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
+            imgSrc: showsMustWatchImgSrc_1,
             duration: '7h 40min',
             rating: {
               value: 4.5,
@@ -1522,7 +1574,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 6,
             link: '/show',
             title: 'Money Heist 2',
-            imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
+            imgSrc: showsMustWatchImgSrc_2,
             duration: '12h 23min',
             rating: {
               value: 4.5,
@@ -1533,7 +1585,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 7,
             link: '/show',
             title: 'MAI 2',
-            imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
+            imgSrc: showsMustWatchImgSrc_3,
             duration: '10h 30min',
             rating: {
               value: 4,
@@ -1544,7 +1596,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 8,
             link: '/show',
             title: 'Stranger Things 3 2',
-            imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
+            imgSrc: showsMustWatchImgSrc_4,
             duration: '8h 20min',
             rating: {
               value: 5,
@@ -1556,7 +1608,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 9,
             link: '/show',
             title: 'Duranga 3',
-            imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
+            imgSrc: showsMustWatchImgSrc_1,
             duration: '7h 40min',
             rating: {
               value: 4.5,
@@ -1567,7 +1619,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 10,
             link: '/show',
             title: 'Money Heist 3',
-            imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
+            imgSrc: showsMustWatchImgSrc_2,
             duration: '12h 23min',
             rating: {
               value: 4.5,
@@ -1578,7 +1630,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 11,
             link: '/show',
             title: 'MAI 3',
-            imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
+            imgSrc: showsMustWatchImgSrc_3,
             duration: '10h 30min',
             rating: {
               value: 4,
@@ -1589,7 +1641,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 12,
             link: '/show',
             title: 'Stranger Things 3 3',
-            imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
+            imgSrc: showsMustWatchImgSrc_4,
             duration: '8h 20min',
             rating: {
               value: 5,
@@ -1601,7 +1653,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 13,
             link: '/show',
             title: 'Duranga 4',
-            imgSrc: 'src/assets/images/shows/must-watch/1.jpg',
+            imgSrc: showsMustWatchImgSrc_1,
             duration: '7h 40min',
             rating: {
               value: 4.5,
@@ -1612,7 +1664,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 14,
             link: '/show',
             title: 'Money Heist 4',
-            imgSrc: 'src/assets/images/shows/must-watch/2.jpg',
+            imgSrc: showsMustWatchImgSrc_2,
             duration: '12h 23min',
             rating: {
               value: 4.5,
@@ -1623,7 +1675,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 15,
             link: '/show',
             title: 'MAI 4',
-            imgSrc: 'src/assets/images/shows/must-watch/3.jpg',
+            imgSrc: showsMustWatchImgSrc_3,
             duration: '10h 30min',
             rating: {
               value: 4,
@@ -1634,7 +1686,7 @@ export const collectionGroups: CollectionGroup[] = [
             id: 16,
             link: '/show',
             title: 'Stranger Things 3 4',
-            imgSrc: 'src/assets/images/shows/must-watch/4.jpg',
+            imgSrc: showsMustWatchImgSrc_4,
             duration: '8h 20min',
             rating: {
               value: 5,

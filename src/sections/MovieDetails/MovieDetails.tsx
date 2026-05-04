@@ -12,8 +12,10 @@ import Ratings from '@/components/Ratings'
 import { castItems } from '@/data/castItems'
 import { reviewItems } from '@/data/reviewItems'
 
-import './MovieDetails.scss'
+import peopleDirectorImgSrc from '@/assets/images/people/director.jpg'
+import peopleMusicImgSrc from '@/assets/images/people/music.jpg'
 
+import './MovieDetails.scss'
 interface MovieDetailsProps {
   seasons?: ReactNode
 }
@@ -165,7 +167,7 @@ const MovieDetails = ({ seasons }: MovieDetailsProps) => {
             <div className="movie-details__group">
               <h3 className="movie-details__title">Director</h3>
               <PersonCard
-                imgSrc="/src/assets/images/people/director.jpg"
+                imgSrc={peopleDirectorImgSrc}
                 imgAlt="Rishab Shetty"
                 width={57}
                 height={60}
@@ -176,7 +178,7 @@ const MovieDetails = ({ seasons }: MovieDetailsProps) => {
             <div className="movie-details__group">
               <h3 className="movie-details__title">Music</h3>
               <PersonCard
-                imgSrc="/src/assets/images/people/music.jpg"
+                imgSrc={peopleMusicImgSrc}
                 imgAlt="B. Ajaneesh Loknath"
                 width={57}
                 height={60}
