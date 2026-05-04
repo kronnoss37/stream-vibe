@@ -1,73 +1,93 @@
-# React + TypeScript + Vite
+# 🎬 Stream Vibe — Веб-интерфейс стримингового сервиса
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=reactrouter&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CSS%20Preprocessor-CC6699?logo=sass&logoColor=white)
+![Bem](https://img.shields.io/badge/BEM-Methodology-yellowgreen)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+**Stream Vibe** — это frontend-проект, посвящённый верстке пользовательского интерфейса стримингового сервиса.  
+Основной акцент сделан на создании современного UI, структурированной CSS-архитектуре и аккуратной адаптивной верстке.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 Описание проекта
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Проект представляет собой интерфейс онлайн-кинотеатра / стриминговой платформы с различными секциями контента:  
+главная страница, карточки фильмов, блоки рекомендаций, баннеры, и интерактивные элементы.
 
-## Expanding the ESLint configuration
+Страницы:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Главная — основной лендинг с подборками контента
+- Каталог фильмов и сериалов — список доступного контента
+- Страница фильма — детальная информация о фильме (на примере "Kantara")
+- Страница сериала — детальная информация о сериале (на примере "Stranger Things")
+- Поддержка — раздел помощи пользователям
+- Подписки — выбор тарифов и их описание
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Основная цель проекта:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- отработать навыки верстки
+- изучить архитектуру стилей
+- научиться структурировать UI в масштабируемом виде
+- подготовить приложение к дальнейшей интеграции с API и реализации бизнес-логики
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎯 Основной упор сделан на:
+
+- компонентный подход к UI и типизацию на TypeScript
+- адаптивную верстку (Desktop / Tablet / Mobile)
+- структурирование стилей по методологии BEM
+- использование Sass (SCSS) для организации и переиспользования стилей
+- создание интерактивных элементов интерфейса
+- современный пользовательский интерфейс
+- организацию и масштабируемость проекта
+
+## 🧩 Реализованный функционал
+
+- 🎬 Карточки фильмов / контента
+- 🎛 Интерактивные UI-компоненты: аккордеон, слайдер, табы
+- 📝 Форма с пользовательскими элементами ввода и кастомным select
+- 🗂️ Многостраничная навигация с клиентским роутингом
+- 🧱 Layout страницы (header, sections, footer)
+- 🎨 Hover-эффекты и интерактивные состояния
+- 📱 Адаптивность под разные устройства
+
+## 🛠 Используемые технологии
+
+- TypeScript
+- React
+- React Router
+- Sass (SCSS)
+- BEM
+- Vite
+- Swiper
+- classnames
+- ESLint + Prettier
+
+## 🌐 Демо
+
+#### 👉 [Открыть приложение в браузере](https://stream-vibe-rho-one.vercel.app/)
+
+## 🚀 Установка и запуск
+
+```bash
+# Clone the repository
+git clone https://github.com/kronnoss37/stream-vibe.git
+
+# Navigate to the project directory
+cd stream-vibe
+
+# Install dependencies for the program to work correctly
+npm ci
+
+# Run dev-server and app in the browser
+npm run dev
+
+# Build the project
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👤 Автор
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+#### Kirill — Frontend Developer
