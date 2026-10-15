@@ -77,7 +77,3 @@ npm run dev
 # Build the project
 npm run build
 ```
-
-## 👤 Автор
-
-#### Kirill — Frontend Developer
